@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
+    
     <title>이진수의 포토폴리오</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <script src="js/jquery-latest.min.js"></script>
@@ -13,22 +16,26 @@
 <body>
     <div id="wrap">
         <header id="_header">
-            <nav id="_nav">
+            <nav id="_nav" class="_clearfix">
+                <div class="_gnb_button animated infinite pulse">
+                    <button type="button" class="_btn _show_btn"><i class="_icon _show_icon">메뉴 활성화</i></button>
+                    <button type="button" class="_btn _hidden_btn"><i class="_icon _hide_icon">메뉴 비활성화</i></button>
+                </div>
                 <div class="_gnb_wrap">
                     <ul class="_gnbs">
-                        <li class="_gnb _lst01">
+                        <li class="_gnb _lst01 _scrollTop">
                             <span class="_txt">HOME</span>
                         </li>
-                        <li class="_gnb _lst02">
+                        <li class="_gnb _lst02 _scrollTop">
                             <span class="_txt">ABOUT ME</span>
                         </li>
-                        <li class="_gnb _lst03">
+                        <li class="_gnb _lst03 _scrollTop">
                             <span class="_txt">SKILLS</span>
                         </li>
-                        <li class="_gnb _lst04">
+                        <li class="_gnb _lst04 _scrollTop">
                             <span class="_txt">PORTFOLIO</span>
                         </li>
-                        <li class="_gnb _lst05">
+                        <li class="_gnb _lst05 _scrollTop">
                             <span class="_txt">AMBITION</span>
                         </li>
                     </ul>
@@ -49,7 +56,7 @@
                             <p class="_txt _point animated fadeIn delay-2s">사람</p>
                         </div>
                     </div>
-<!--                    <button type="button" class="_btn _btn_down animated infinite bounce"><i class="_icon _icon_down">다음 content로 이동</i></button>-->
+                    <!--                    <button type="button" class="_btn _btn_down animated infinite bounce"><i class="_icon _icon_down">다음 content로 이동</i></button>-->
                 </div>
             </article>
             <article class="_content _intro">
@@ -166,10 +173,101 @@
                     </ul>
                 </div>
             </article>
+            <article class="_content _ambition">
+                <div class="_tit_box">
+                    <h1 class="_tit">#Ambition</h1>
+                </div>
+                <div class="_content_container">
+                    <div class="_content_wrap">
+                        <h2 class="_sub_tit">웹에 다가가기 위한 발걸음</h2>
+                        <p class="_txt"><strong>4학년 1학기</strong>를 마친 후 휴학이라는 결정을 하게 되었습니다. 웹에 관한 강의를 1,2학년 때 재미있게 배운 기억을 떠올리고 웹이란 무엇인지 더 알고 싶고 배우고 싶은 마음에 결정하게 되었습니다. 졸업을 앞둔 상황에서 정말 어려운 결정이었지만 저의 꿈에 대한 열정은 이 결정이 확신하였습니다. 늦었지만 열심히 노력하고 학습한다면 해낼 수 있다는 생각을 가지고 열심히 준비하였습니다. 꿈을 이루기 위한 이러한 한 단계씩의 과정이 저에게는 너무나도 행복하고 즐거웠습니다. 코딩을 통해 구현되는 화면의 모습을 보면 항상 짜릿하였고 해결되지 않는 부분이 해결된다면 너무나도 즐거운 일이었습니다. 이제는 이렇게 행복하고 즐거운 일을 신입 웹 퍼블리셔로서 해내고 싶습니다.<br> <strong>웹은</strong> 무궁무진한 세계인 것 같습니다. 파도 파도 끝이 없고 항상 새로운 변화를 만들어내는 아주 신비롭고도 새로운 세계인 것 같습니다. 저도 이러한 웹의 세계처럼 파도 파도 끝이 없고 항상 새로운 변화를 만들어내며 웹과 같은 직원이 되고 싶습니다. 이러한 직원이 되기 위해 저는 항상 노력할 것이고 힘든 일이 있다면 힘들기보다는 즐기려는 자세를 가지고 회사의 꼭 필요한 웹 퍼블리셔가 되겠습니다.</p>
+                    </div>
+                </div>
+            </article>
         </section>
+        <footer id="_footer">
+            <div class="_footer_wrap _clearfix">
+                <div class="_contact_wrap">
+                    <h3 class="_tit">CONTACT ME</h3>
+                    <ul class="_contact_lsts">
+                        <li class="_contact_lst">WEB PUBLISHER</li>
+                        <li class="_contact_lst">LEE JIN SU</li>
+                        <li class="_contact_lst">010-3380-8297</li>
+                        <li class="_contact_lst">ljs5923@google.com</li>
+                    </ul>
+                </div>
+                <div class="_contact_icon_wrap">
+                    <figure class="_img_box">
+                        <img src="imgs/footer_icon.png" alt="footer icon logo" class="_rel">
+                    </figure>
+                    <ul class="_contact_icon _clearfix">
+                        <li class="_contact_icon_lst"><a href="https://plus.google.com/u/0/114845030938189679206" class="_icon _gg_icon"></a></li>
+                        <li class="_contact_icon_lst">
+                            <a href="https://www.instagram.com/jinnnnsu/" class="_icon _insta_icon"></a>
+                        </li>
+                        <li class="_contact_icon_lst">
+                            <a href="https://www.facebook.com/jinsoo.lee.395" class="_icon _face_icon"></a>
+                        </li>
+                        <li class="_contact_icon_lst">
+                            <a href="https://github.com/ljs5923" class="_icon _git_icon"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="_footer_nav_wrap">
+                    <h3 class="_tit">Navigator</h3>
+                    <ul class="_footer_nav _clearfix">
+                        <li class="_footer_nav_lst _scrollTop">HOME</li>
+                        <li class="_footer_nav_lst _scrollTop">ABOUT ME</li>
+                        <li class="_footer_nav_lst _scrollTop">SKILLS</li>
+                        <li class="_footer_nav_lst _scrollTop">PORTFOLIO</li>
+                        <li class="_footer_nav_lst _scrollTop">AMBITION</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
     <script>
         jQuery(function($) {
+            //menu
+            var $header = $('#_header');
+            var $btn = $header.find('._btn');
+            var $gnbLst = $('._scrollTop');
+            var $content = $('article._content');
+            var $articleOT = new Array();
+            for (i = 0; i < 5; i++) {
+                var $artOt = $('article._content').eq(i).offset().top;
+                $articleOT.push($artOt);
+            }
+            $gnbLst.on('click', function() {
+                var index = $gnbLst.index(this);
+                $('html,body').animate({
+                    scrollTop: $articleOT[index]
+                }, 500)
+                if (index > 4) {
+                    index = index - 5;
+                    $('html,body').animate({
+                        scrollTop: $articleOT[index]
+                    }, 500)
+                }
+            })
+            $btn.on('click', function() {
+                if ($(this).hasClass('_show_btn')) {
+                    $(this).fadeOut(function() {
+                        $(this).siblings().fadeIn();
+                    });
+                    $header.animate({
+                        right: 0
+                    }, 500)
+                } else if ($(this).hasClass('_hidden_btn')) {
+                    $(this).fadeOut(function() {
+                        $(this).siblings().fadeIn();
+                    });
+                    $header.animate({
+                        right: -180
+                    }, 500)
+                }
+            })
+
             //typist
             var $main = $('._main');
             var $titBox01 = $main.find('._tit_box');
@@ -223,4 +321,5 @@
         })
     </script>
 </body>
+
 </html>
