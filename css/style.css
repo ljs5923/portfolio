@@ -57,7 +57,7 @@ em {font-style: normal;}
 #_container ._content._intro ._content_container{width: 100%;max-width: 1200px;margin: 0 auto 80px}
 #_container ._content._intro ._tit_box ._tit ._btn_tit{font-size: 32px;font-weight: bold;color: #10475d}
 #_container ._content._intro ._btn_intro{display: block;margin: 0 auto;text-align: left;font-size: 18px;-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease}
-#_container ._content._intro ._content_intro{position: relative;width: 70%;max-width: 400px;padding: 25px 0;-webkit-box-shadow: 0px 2px 8px #222;box-shadow: 0px 2px 8px #222}
+#_container ._content._intro ._content_intro{position: relative;width: 400px;padding: 25px 0;-webkit-box-shadow: 0px 2px 8px #222;box-shadow: 0px 2px 8px #222}
 #_container ._content._intro ._content_intro ._img_box{width: 350px;margin: 0 auto;padding-bottom: 80px}
 #_container ._content._intro ._content_intro ._dec_box{position: absolute;bottom: 0;left: 0;width: 350px;color: #555;-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease}
 #_container ._content._intro ._content_intro ._dec_box:before{content: '';position: absolute;bottom: 30px;right: 10px;width: 30px;height: 30px;color: #fff;background-image: url(../imgs/link_btn.png);-webkit-background-size: 100%;background-size: 100%}
@@ -135,7 +135,7 @@ em {font-style: normal;}
     #_container ._content._main ._dec_box ._txt{font-size: 12px}
     #_container ._content._main ._dec_box ._txt._point{font-size: 20px}
     #_container ._content._intro ._content_container{margin-bottom: 0}
-    #_container ._content._intro ._content_intro{margin: 0 auto}
+    #_container ._content._intro ._content_intro{width: 70%;margin: 0 auto}
     #_container ._content._intro ._content_intro ._intro_wrap ._img_box{width: 90%}
     #_container ._content._intro ._content_intro ._dec_box{left: 10px;bottom: 35px;padding: 20px 0;width: 270px;background-color: #10475d;border-radius: 10px;color: #fff}
     #_container ._content._intro ._content_intro ._dec_box ._txt{font-size: 12px;color: #fff}
@@ -147,6 +147,19 @@ em {font-style: normal;}
     #_container ._content._intro ._content_wrap ._content_con{top: 150px;left: 0;width: 100%}
     #_container ._content._intro ._content_wrap ._content_con ._lst{left: 10%;width: 80% !important;height: 100px}
     #_container ._content._intro ._content_wrap ._content_con ._lst ._con_txt{font-size: 11px}
+    #_container ._content._skills ._tit_box ._tit{font-size: 30px}
+    #_container ._content._skills ._content_wrap{margin: 0 auto}
+    #_container ._content._skills ._content_wrap ._content_lst{width: 100%}
+    #_container ._content._skills ._content_wrap ._icon{width: 100px;height: 100px}
+    #_container ._content._skills ._content_wrap ._content_lst ._txt{font-size: 20px;margin-top: 0;margin-bottom: 20px}
+    #_container ._content._portfolio ._tit_box ._tit{font-size: 30px}
+    #_container ._content._portfolio ._content_wrap ._content_lst ._img_box ._go_box{font-size: 16px;color: #555}
+    #_container ._content._portfolio ._content_wrap ._content_lst ._img_box:after{width: 70%;opacity: 1}
+    #_container ._content._ambition ._tit_box ._tit{font-size: 30px}
+    #_container ._content._portfolio ._content_wrap ._content_lst ._dec_box{font-size: 16px}
+    #_container ._content._ambition ._content_wrap ._sub_tit{font-size: 18px;margin-bottom: 20px}
+    #_container ._content._ambition ._content_wrap{padding: 10px;font-size: 12px}
+    #_container ._content._ambition ._content_wrap strong{font-size: 16px}
 }
 
 /*가로모드 모바일 디바이스 (가로 해상도가 576px보다 크고 768px 보다 작은 화면에 적용)*/
