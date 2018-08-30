@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    
+
     <title>이진수의 포토폴리오</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
@@ -17,28 +17,57 @@
     <div id="wrap">
         <header id="_header">
             <nav id="_nav" class="_clearfix">
-                <div class="_gnb_button animated infinite pulse">
-                    <button type="button" class="_btn _show_btn"><i class="_icon _show_icon">메뉴 활성화</i></button>
-                    <button type="button" class="_btn _hidden_btn"><i class="_icon _hide_icon">메뉴 비활성화</i></button>
+                <div class="_desk_menu_wrap">
+                    <div class="_gnb_button animated infinite pulse">
+                        <button type="button" class="_btn _show_btn"><i class="_icon _show_icon">메뉴 활성화</i></button>
+                        <button type="button" class="_btn _hidden_btn"><i class="_icon _hide_icon">메뉴 비활성화</i></button>
+                    </div>
+                    <div class="_gnb_wrap">
+                        <ul class="_gnbs">
+                            <li class="_gnb _lst01 _scrollTop">
+                                <span class="_txt">HOME</span>
+                            </li>
+                            <li class="_gnb _lst02 _scrollTop">
+                                <span class="_txt">ABOUT ME</span>
+                            </li>
+                            <li class="_gnb _lst03 _scrollTop">
+                                <span class="_txt">SKILLS</span>
+                            </li>
+                            <li class="_gnb _lst04 _scrollTop">
+                                <span class="_txt">PORTFOLIO</span>
+                            </li>
+                            <li class="_gnb _lst05 _scrollTop">
+                                <span class="_txt">AMBITION</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="_gnb_wrap">
-                    <ul class="_gnbs">
-                        <li class="_gnb _lst01 _scrollTop">
-                            <span class="_txt">HOME</span>
-                        </li>
-                        <li class="_gnb _lst02 _scrollTop">
-                            <span class="_txt">ABOUT ME</span>
-                        </li>
-                        <li class="_gnb _lst03 _scrollTop">
-                            <span class="_txt">SKILLS</span>
-                        </li>
-                        <li class="_gnb _lst04 _scrollTop">
-                            <span class="_txt">PORTFOLIO</span>
-                        </li>
-                        <li class="_gnb _lst05 _scrollTop">
-                            <span class="_txt">AMBITION</span>
-                        </li>
-                    </ul>
+                <div class="_mobile_menu_wrap">
+                    <div class="_gnb_button animated infinite pulse">
+                        <button type="button" class="_btn _mobile_btn"><i class="_icon _mobile_icon">모바일 메뉴 활성화</i></button>
+                    </div>
+                    <div class="_gnb_wrap">
+                        <ul class="_gnbs">
+                            <li class="_gnb _lst01 _scrollTop">
+                                <span class="_txt">HOME</span>
+                            </li>
+                            <li class="_gnb _lst02 _scrollTop">
+                                <span class="_txt">ABOUT ME</span>
+                            </li>
+                            <li class="_gnb _lst03 _scrollTop">
+                                <span class="_txt">SKILLS</span>
+                            </li>
+                            <li class="_gnb _lst04 _scrollTop">
+                                <span class="_txt">PORTFOLIO</span>
+                            </li>
+                            <li class="_gnb _lst05 _scrollTop">
+                                <span class="_txt">AMBITION</span>
+                            </li>
+                            <li class="_gnb _lst06 _scrollTop">
+                                <span class="_txt">Close</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -228,46 +257,6 @@
     </div>
     <script>
         jQuery(function($) {
-            //menu
-            var $header = $('#_header');
-            var $btn = $header.find('._btn');
-            var $gnbLst = $('._scrollTop');
-            var $content = $('article._content');
-            var $articleOT = new Array();
-            for (i = 0; i < 5; i++) {
-                var $artOt = $('article._content').eq(i).offset().top;
-                $articleOT.push($artOt);
-            }
-            $gnbLst.on('click', function() {
-                var index = $gnbLst.index(this);
-                $('html,body').animate({
-                    scrollTop: $articleOT[index]
-                }, 500)
-                if (index > 4) {
-                    index = index - 5;
-                    $('html,body').animate({
-                        scrollTop: $articleOT[index]
-                    }, 500)
-                }
-            })
-            $btn.on('click', function() {
-                if ($(this).hasClass('_show_btn')) {
-                    $(this).fadeOut(function() {
-                        $(this).siblings().fadeIn();
-                    });
-                    $header.animate({
-                        right: 0
-                    }, 500)
-                } else if ($(this).hasClass('_hidden_btn')) {
-                    $(this).fadeOut(function() {
-                        $(this).siblings().fadeIn();
-                    });
-                    $header.animate({
-                        right: -180
-                    }, 500)
-                }
-            })
-
             //typist
             var $main = $('._main');
             var $titBox01 = $main.find('._tit_box');
@@ -285,9 +274,9 @@
             }).typistStop();
             //intro
             var $intro = $('._intro');
-            var $btn = $intro.find('._btn');
+            var $introBtn = $intro.find('._btn');
             var $conWrap02 = $intro.find('._content_wrap');
-            $('._btn').on('click', function() {
+            $introBtn.on('click', function() {
                 if ($(this).hasClass('_btn_intro')) {
                     $(this).fadeOut(function() {
                         $conWrap02.fadeIn();
@@ -318,12 +307,72 @@
                     $skillsLst.removeClass('animated fadeInUp');
                 }
             })
-//            moblie
+            //            moblie
             $(window).on('load resize', function() {
-                var winW=$(window).width();
-                if(winW<576)
-                var winH = $(window).height();
-                $('._content._main').css('height', winH);                
+                var winW = $(window).width();
+                if (winW < 576) {
+                    var winH = $(window).height();
+                    $('._content._main').css('height', winH)
+                }
+                //menu
+                var $header = $('#_header');
+                var $mobileMenu = $header.find('._mobile_menu_wrap');
+                var $gnbWrap = $header.find('._gnb_wrap')
+                var $btn = $header.find('._btn');
+                var $gnbLst = $('._scrollTop');
+                var $content = $('article._content');
+                var $articleOT = new Array();
+                function articleOTpush() {
+                    for (i = 0; i < 5; i++) {
+                        var $artOt = $('article').eq(i).offset().top;
+                        $articleOT.push($artOt);
+                    }
+                }
+                $gnbLst.off().on('click', function() {
+                    var index = $gnbLst.index(this);
+                    articleOTpush();
+                    console.log($articleOT);
+                    console.log(index);
+                    $('html,body').stop().animate({
+                        scrollTop: $articleOT[index]
+                    }, 500)
+                    if (index > 4 && index < 10) {
+                        index = index - 5;
+                        $('html,body').stop().animate({
+                            scrollTop: $articleOT[index]
+                        }, 500);
+                    } else if (index > 10) {
+                        index = index - 11;
+                        $('html,body').stop().animate({
+                            scrollTop: $articleOT[index]
+                        }, 500);
+                    } else if (index = 10) {
+                        $mobileMenu.find('._gnb_wrap').slideUp(function() {
+                            $header.find('._mobile_btn').fadeIn();
+                        });
+                    }
+                })
+                $btn.on('click', function() {
+                    if ($(this).hasClass('_show_btn')) {
+                        $(this).fadeOut(function() {
+                            $header.find('._hidden_btn').fadeIn();
+                        });
+                        $header.stop().animate({
+                            right: 0
+                        }, 500)
+                    } else if ($(this).hasClass('_hidden_btn')) {
+                        $(this).fadeOut(function() {
+                            $header.find('._show_btn').fadeIn();
+                        });
+                        $header.stop().animate({
+                            right: -180
+                        }, 500)
+                    } else if ($(this).hasClass('_mobile_btn')) {
+                        $(this).fadeOut(function() {
+                            $mobileMenu.find('._gnb_wrap').slideDown();
+                        })
+                    }
+                })
             }).resize();
         })
     </script>

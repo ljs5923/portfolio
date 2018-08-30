@@ -15,7 +15,7 @@ em {font-style: normal;}
 /* common*/
 ._rel{width: 100%}
 ._clearfix:after{content:'';display:block;clear:both}
-#_container ._content ._tit_box{padding-bottom: 50px;text-align: center}
+#_container ._content ._tit_box{padding-bottom: 50px;font-size: 40px;text-align: center}
 #_container ._content{padding: 80px 0}
 ._icon{display: inline-block;text-indent: -9999px}
 #_container{width: 100%}
@@ -25,14 +25,17 @@ em {font-style: normal;}
 #_header{display: table;position: fixed;top: 0;right: -180px;width: 270px;height: 100%;z-index: 60}
 /* navigator */
 #_nav{display: table-cell;vertical-align: middle}
+#_nav ._mobile_menu_wrap{display: none}
 #_nav ._gnb_button{float: left;width: 100px;height: 400px}
 #_nav ._gnb_button ._btn{width: 50px;height: 50px;margin: 175px auto}
 #_nav ._gnb_button ._btn._hidden_btn{display: none}
 #_nav ._gnb_button ._btn ._icon{display: inline-block;width: 100%;height: 100%;text-indent: -9999px}
 #_nav ._gnb_button ._btn ._icon._show_icon{background-image: url(../imgs/menu_show.png);-webkit-background-size: 100%;background-size: 100%}
 #_nav ._gnb_button ._btn ._icon._hide_icon{background-image: url(../imgs/menu_hide.png);-webkit-background-size: 100%;background-size: 100%}
+#_nav ._gnb_button ._btn ._icon._mobile_icon{background-image: url(../imgs/mobli_icon.png);-webkit-background-size: 100%;background-size: 100%}
 #_nav ._gnb_wrap{float: left;height: 400px;background-color: #fff;border-radius: 10px 0 0 10px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-shadow: -3px 5px 10px #222;box-shadow: -3px 5px 10px #222}
 #_nav ._gnb_wrap ._gnbs ._gnb{position: relative;width: 120px;height: 60px;padding: 10px 40px 10px 10px;cursor: pointer}
+#_nav ._gnb_wrap ._gnbs ._gnb._lst06{display: none;}
 #_nav ._gnb_wrap ._gnbs ._gnb:hover>._txt{font-size: 20px;color: #000;opacity: 1}
 #_nav ._gnb_wrap ._gnbs ._gnb:hover>._txt:after{right: 20px;opacity: 1}
 #_nav ._gnb_wrap ._gnbs ._gnb ._txt:after{content: '';position: absolute;top: 32px;right: 30px;width: 16px;height: 16px;background-image: url(../imgs/next.png);opacity: 0;-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease}
@@ -51,11 +54,9 @@ em {font-style: normal;}
 #_container ._content._main ._dec_box ._txt{font-size: 20px;font-weight: bold;color: #fff;letter-spacing: -1px}
 #_container ._content._main ._dec_box ._txt:last-child{padding-top: 20px}
 #_container ._content._main ._dec_box ._txt._point{font-size: 40px;font-weight: bold;color: #fff}
-/*#_container ._content._main ._btn_down{width: 100px;height: 100px;margin-top: 200px}*/
-/*#_container ._content._main ._btn_down ._icon_down{display: inline-block;width: 100%;height: 100%;text-indent: -9999px;background-image: url(../imgs/scroll_down.png);-webkit-background-size: 100%;background-size: 100%;background-repeat: no-repeat;}*/
 /* content02 */
 #_container ._content._intro ._content_container{width: 100%;max-width: 1200px;margin: 0 auto 80px}
-#_container ._content._intro ._tit_box ._tit ._btn_tit{font-size: 32px;font-weight: bold;color: #10475d}
+#_container ._content._intro ._tit_box ._tit ._btn_tit{font-size: 40px;font-weight: bold;color: #10475d}
 #_container ._content._intro ._btn_intro{display: block;margin: 0 auto;text-align: left;font-size: 18px;-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease}
 #_container ._content._intro ._content_intro{position: relative;width: 400px;padding: 25px 0;-webkit-box-shadow: 0px 2px 8px #222;box-shadow: 0px 2px 8px #222}
 #_container ._content._intro ._content_intro ._img_box{width: 350px;margin: 0 auto;padding-bottom: 80px}
@@ -79,7 +80,7 @@ em {font-style: normal;}
 #_container ._content._intro ._content_wrap ._content_con ._lst ._con_txt{position: absolute;top: 50%;left: 50%;width: 100%;font-size: 18px;font-weight: bold;letter-spacing: -1px;color: #10475d;transform: translate(-50%,-50%)}
 /* content03 */
 #_container ._content._skills{background-image: url(../imgs/skills_bg.jpg);background-repeat: no-repeat;background-attachment: fixed}
-#_container ._content._skills ._tit_box ._tit{font-size: 40px;font-weight: bold;color: #fff}
+#_container ._content._skills ._tit_box ._tit{font-weight: bold;color: #fff}
 #_container ._content._skills ._content_wrap{width: 100%;max-width: 1000px;margin: 150px auto}
 #_container ._content._skills ._content_wrap ._content_lst{float: left;width: 200px;-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease}
 #_container ._content._skills ._content_wrap ._icon{display: block;width: 150px;height: 150px;margin: 0 auto;background-repeat: no-repeat;-webkit-background-size: 100%;background-size: 100%}
@@ -90,7 +91,7 @@ em {font-style: normal;}
 #_container ._content._skills ._content_wrap ._icon._icon_jQuery{background-image: url(../imgs/jQueryMark.png)}
 #_container ._content._skills ._content_wrap ._icon._icon_php{background-image: url(../imgs/phpMark.png)}
 /* content04 */
-#_container ._content._portfolio ._tit_box ._tit{font-size: 32px;font-weight: bold;color: #10475d}
+#_container ._content._portfolio ._tit_box ._tit{font-weight: bold;color: #10475d}
 #_container ._content._portfolio ._content_wrap{width: 90%;max-width: 1200px;margin: 0 auto}
 #_container ._content._portfolio ._content_wrap ._content_lst{margin-bottom: 30px}
 #_container ._content._portfolio ._content_wrap ._content_lst ._btn_link{display: block;width: 100%;max-width: 800px;margin: 0 auto;background-color: #fff;-webkit-box-shadow: 0px 2px 8px #222;box-shadow: 0px 2px 8px #222}
@@ -101,20 +102,20 @@ em {font-style: normal;}
 #_container ._content._portfolio ._content_wrap ._content_lst ._btn_link:hover ._img_box ._go_box{font-size: 18px;font-weight: bold;color: #555}
 #_container ._content._portfolio ._content_wrap ._content_lst ._dec_box{padding: 0 0 20px 20px;font-size: 18px;color: #555}
 /* content05 */
-#_container ._content._ambition ._tit_box ._tit{font-size: 40px;font-weight: bold;color: #fff}
+#_container ._content._ambition ._tit_box ._tit{font-weight: bold;color: #fff}
 #_container ._content._ambition{background-image: url(../imgs/ambition_bg.jpg);background-repeat: no-repeat;-webkit-background-size: cover;background-size: cover}
 #_container ._content._ambition ._content_wrap{width: 90%;max-width: 550px;margin: 0 auto;padding: 50px;color: #fff;background-color: rgba(0,0,0,0.2);border: 5px solid #fff;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
 #_container ._content._ambition ._content_wrap ._sub_tit{width: 100%;margin-bottom: 50px;font-size: 22px;font-weight: bold;text-align: center;vertical-align: middle}
 #_container ._content._ambition ._content_wrap strong{font-size: 18px;font-weight: bold}
 /* footer */
 #_footer{background-image: url(../imgs/ambition_bg.jpg);background-position: 50%}
-#_footer ._footer_wrap{width: 100%;max-width: 1200px;margin: 0 auto;background-color: #cef1eb9c}
+#_footer ._footer_wrap{position: relative;width: 100%;max-width: 1200px;margin: 0 auto;background-color: #cef1eb9c}
 #_footer ._footer_wrap ._contact_wrap{float: left;width: 250px;padding: 44px 0 0 75px;color: #555}
 #_footer ._footer_wrap ._tit{font-size: 24px;font-weight: bold;margin-bottom: 20px}
 #_footer ._footer_wrap ._contact_wrap ._contact_lst{position: relative;font-size: 18px;font-weight: bold;padding-left: 15px}
 #_footer ._footer_wrap ._contact_wrap ._contact_lst:before{content: '';position: absolute;top: 11.5px;left: 0;width: 5px;height: 5px;background-color: #fff;background-color: #555;border-radius: 50%}
 #_footer ._footer_wrap ._contact_icon_wrap{float: left;width: 550px;padding-top: 27px}
-#_footer ._footer_wrap ._contact_icon_wrap ._contact_icon{width: 320px;margin: 0 auto}
+#_footer ._footer_wrap ._contact_icon_wrap ._contact_icon{width: 100%;max-width: 320px;margin: 0 auto}
 #_footer ._footer_wrap ._contact_icon_wrap ._img_box{width: 150px;margin: 0 auto}
 #_footer ._footer_wrap ._contact_icon_wrap ._contact_icon_lst{float: left;width: 60px;height: 60px;margin: 10px}
 #_footer ._footer_wrap ._contact_icon_wrap ._contact_icon_lst ._icon{display: block;width: 40px;height: 40px;margin: 10px}
@@ -127,50 +128,94 @@ em {font-style: normal;}
 #_footer ._footer_wrap ._footer_nav_wrap ._footer_nav_lst:before{content: '';position: absolute;top: 13px;left: 0;width: 5px;height: 5px;background-color: #fff;background-color: #555;border-radius: 50%}
 /*세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용)*/
 @media only screen and (max-width: 575px) {
+    #_container ._content ._tit_box{font-size: 30px}
     #_container ._content._main ._content_container{height: 100%}
-    #_container ._content._main ._tit_box ._tit{font-size: 30px}
+    #_container ._content._main ._tit_box ._tit{font-size: 40px}
     #_container ._content._main ._tit_box ._sub_tit{font-size: 16px}
     #_container ._content._main ._tit_box ._sub_tit ._name{font-size: 20px}
     #_container ._content._main ._dec_box{margin-top: 0}
     #_container ._content._main ._dec_box ._txt{font-size: 12px}
     #_container ._content._main ._dec_box ._txt._point{font-size: 20px}
+    #_container ._content._intro ._tit_box ._tit ._btn_tit{font-size: 24px}
     #_container ._content._intro ._content_container{margin-bottom: 0}
     #_container ._content._intro ._content_intro{width: 70%;margin: 0 auto}
     #_container ._content._intro ._content_intro ._intro_wrap ._img_box{width: 90%}
-    #_container ._content._intro ._content_intro ._dec_box{left: 10px;bottom: 35px;padding: 20px 0;width: 270px;background-color: #10475d;border-radius: 10px;color: #fff}
+    #_container ._content._intro ._content_intro ._dec_box{left: 10px;bottom: 35px;padding: 20px 0;width:250px;background-color: #10475d;border-radius: 10px;color: #fff}
     #_container ._content._intro ._content_intro ._dec_box ._txt{font-size: 12px;color: #fff}
-    #_container ._content._intro ._content_intro ._dec_box ._txt strong{font-size: 14px;color: #fff}
-    #_container ._content._intro ._tit_box ._tit ._btn_tit{font-size: 24px}
+    #_container ._content._intro ._content_intro ._dec_box ._txt strong{font-size: 13px;color: #fff}
     #_container ._content._intro ._content_wrap{height: 400px}
     #_container ._content._intro ._content_wrap ._content_lsts ._lst{z-index: 60}
     #_container ._content._intro ._content_wrap ._content_lsts ._lst a{font-size: 20px;}
     #_container ._content._intro ._content_wrap ._content_con{top: 150px;left: 0;width: 100%}
     #_container ._content._intro ._content_wrap ._content_con ._lst{left: 10%;width: 80% !important;height: 100px}
     #_container ._content._intro ._content_wrap ._content_con ._lst ._con_txt{font-size: 11px}
-    #_container ._content._skills ._tit_box ._tit{font-size: 30px}
     #_container ._content._skills ._content_wrap{margin: 0 auto}
     #_container ._content._skills ._content_wrap ._content_lst{width: 100%}
     #_container ._content._skills ._content_wrap ._icon{width: 100px;height: 100px}
     #_container ._content._skills ._content_wrap ._content_lst ._txt{font-size: 20px;margin-top: 0;margin-bottom: 20px}
-    #_container ._content._portfolio ._tit_box ._tit{font-size: 30px}
     #_container ._content._portfolio ._content_wrap ._content_lst ._img_box ._go_box{font-size: 16px;color: #555}
     #_container ._content._portfolio ._content_wrap ._content_lst ._img_box:after{width: 70%;opacity: 1}
-    #_container ._content._ambition ._tit_box ._tit{font-size: 30px}
-    #_container ._content._portfolio ._content_wrap ._content_lst ._dec_box{font-size: 16px}
+    #_container ._content._portfolio ._content_wrap ._content_lst ._dec_box{font-size: 14px}
     #_container ._content._ambition ._content_wrap ._sub_tit{font-size: 18px;margin-bottom: 20px}
     #_container ._content._ambition ._content_wrap{padding: 10px;font-size: 12px}
     #_container ._content._ambition ._content_wrap strong{font-size: 16px}
+    #_footer ._footer_wrap ._contact_wrap{width: 100%;padding: 0;padding-top: 10px;text-align: center}
+    #_footer ._footer_wrap ._tit{font-size: 16px;margin-bottom: 10px}
+    #_footer ._footer_wrap ._contact_wrap ._contact_lst:before{opacity: 0}
+    #_footer ._footer_wrap ._contact_wrap ._contact_lst{padding: 0;font-size: 12px;letter-spacing: 2px}
+    #_footer ._footer_wrap ._contact_icon_wrap{width: 100%;padding-top: 119px}
+    #_footer ._footer_wrap ._contact_icon_wrap ._img_box{width: 100px}
+    #_footer ._footer_wrap ._footer_nav_wrap{position: absolute;top: 116px;width: 100%;padding: 0;padding-top: 10px;text-align: center}
+    #_footer ._footer_wrap ._footer_nav_wrap ._footer_nav_lst{height: 25px;padding-left: 0;line-height: 25px;font-size: 12px}
+    #_footer ._footer_wrap ._footer_nav_wrap ._footer_nav_lst:before{opacity: 0}
 }
 
 /*가로모드 모바일 디바이스 (가로 해상도가 576px보다 크고 768px 보다 작은 화면에 적용)*/
-@media only screen and (min-width: 576px) and (max-width: 767px) {}
-
-/*태블릿 디바이스 (가로 해상도가 768px보다 크고 991px 보다 작은 화면에 적용)*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    #_container ._content ._tit_box{padding-bottom: 20px;font-size: 32px}
+    #_container ._content._main{height: auto !important}
+    #_container ._content._main ._content_container{height: auto;padding: 100px 0}
+    #_container ._content._main ._tit_box ._tit{font-size: 40px}
+    #_container ._content._main ._tit_box ._sub_tit{font-size: 24px}
+    #_container ._content._main ._tit_box ._sub_tit ._point{font-size: 30px}
+    #_container ._content._main ._dec_box{margin-bottom: 0}
+    #_container ._content._main ._dec_box ._txt{font-size: 16px;}
+    #_container ._content._main ._dec_box ._txt._point{font-size: 24px}
+    #_container ._content._intro ._content_container{margin-bottom: 0}
+    #_container ._content._intro ._tit_box ._tit ._btn_tit{font-size:32px}
+    #_container ._content._intro ._content_intro{width: 50%;margin: 0 auto}
+    #_container ._content._intro ._content_intro ._intro_wrap ._img_box{width: 90%}
+    #_container ._content._intro ._content_intro ._dec_box{left: 10px;bottom: 35px;padding: 20px 0;width: 340px;background-color: #10475d;border-radius: 10px;color: #fff}
+    #_container ._content._intro ._content_intro ._dec_box ._txt{font-size: 14px;color: #fff}
+    #_container ._content._intro ._content_intro ._dec_box ._txt strong{font-size: 16px;color: #fff}
+    #_container ._content._intro ._content_wrap{height: 400px}
+    #_container ._content._intro ._content_wrap ._content_lsts ._lst{z-index: 60}
+    #_container ._content._intro ._content_wrap ._content_lsts ._lst a{font-size: 24px;}
+    #_container ._content._intro ._content_wrap ._content_con{top: 150px;left: 0;width: 100%}
+    #_container ._content._intro ._content_wrap ._content_con ._lst{left: 10%;width: 80% !important;height: 100px}
+    #_container ._content._intro ._content_wrap ._content_con ._lst ._con_txt{font-size: 14px}
+    #_footer ._footer_wrap ._contact_wrap{float: inherit;position: absolute;top: 0;left: 5%;width: 90%;padding: 0;padding-top: 20px}
     #_container ._content._skills ._content_wrap ._content_lst{width: 33.3%}
     #_container ._content._skills ._content_wrap ._content_lst._lst04{width: 40%;margin-left: 10%}
     #_container ._content._skills ._content_wrap ._content_lst._lst05{width: 40%;margin-right: 10%}
-    #_footer ._footer_wrap{position: relative}
+    #_footer ._footer_wrap ._tit{font-size: 20px}
+    #_footer ._footer_wrap ._contact_wrap ._contact_lst{float: left;margin-right: 4%;font-size: 14px}
+    #_footer ._footer_wrap ._contact_wrap ._contact_lst:last-child{margin-right: 0}
+    #_footer ._footer_wrap ._contact_icon_wrap{float: inherit;width: 100%;width: 100%;padding-top: 235px}
+    #_footer ._footer_wrap ._contact_icon_wrap ._img_box{width: 100px}
+    #_footer ._footer_wrap ._footer_nav_wrap{float: inherit;position: absolute;top: 103px;left: 5%;width: 90%;padding: 0;padding-top: 20px}
+    #_footer ._footer_wrap ._footer_nav_wrap ._footer_nav_lst{width: auto;margin-right: 9%;font-size: 14px}
+    #_footer ._footer_wrap ._footer_nav_wrap ._footer_nav_lst:last-child{margin-right: 0}
+}
+
+/*태블릿 디바이스 (가로 해상도가 768px보다 크고 991px 보다 작은 화면에 적용)*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #_nav ._gnb_wrap ._gnbs ._gnb{height: 40px}
+    #_nav ._gnb_wrap ._gnbs ._gnb ._txt{height: 40px;line-height: 40px}
+    #_container ._content._main{height: auto !important}
+    #_container ._content._skills ._content_wrap ._content_lst{width: 33.3%}
+    #_container ._content._skills ._content_wrap ._content_lst._lst04{width: 40%;margin-left: 10%}
+    #_container ._content._skills ._content_wrap ._content_lst._lst05{width: 40%;margin-right: 10%}
     #_footer ._footer_wrap ._contact_wrap{float: inherit;position: absolute;top: 0;left: 5%;width: 90%;padding: 0;padding-top: 20px}
     #_footer ._footer_wrap ._contact_wrap ._contact_lst{float: left;margin-right: 4%}
     #_footer ._footer_wrap ._contact_wrap ._contact_lst:last-child{margin-right: 0}
@@ -178,6 +223,22 @@ em {font-style: normal;}
     #_footer ._footer_wrap ._footer_nav_wrap{float: inherit;position: absolute;top: 103px;left: 5%;width: 90%;padding: 0;padding-top: 20px}
     #_footer ._footer_wrap ._footer_nav_wrap ._footer_nav_lst{width: auto;margin-right: 9%}
     #_footer ._footer_wrap ._footer_nav_wrap ._footer_nav_lst:last-child{margin-right: 0}
+}
+@media only screen and (max-width: 991px){
+    #_header{display: block;left: 0;width: 100%;height: auto}
+    #_nav{display: block;vertical-align: top}
+    #_nav ._gnb_button{position: absolute;top: 20px;right: 20px;width: 50px;height: 50px}
+    #_nav ._gnb_button ._btn{margin: 0}
+    #_nav ._gnb_button ._btn._show_btn{display: none}
+    #_nav ._gnb_button ._btn._hidden_btn{display: none}
+    #_nav ._gnb_button ._btn._mobile_btn{display: block}
+    #_nav ._desk_menu_wrap{display: none}
+    #_nav ._mobile_menu_wrap{display: block}
+    #_nav ._gnb_wrap{display: none;width: 100%;height: auto;border-radius: 0;-webkit-box-shadow: 0 1px 10px #222;box-shadow: 0 1px 10px #222}
+    #_nav ._gnb_wrap ._gnbs ._gnb{width: 100%;padding: 10px 0 0 0}
+    #_nav ._gnb_wrap ._gnbs ._gnb._lst06{display: block}
+    #_nav ._gnb_wrap ._gnbs ._gnb ._txt:after{opacity: 1}
+    #_nav ._gnb_wrap ._gnbs ._gnb._lst06 ._txt:after{opacity: 0}
 }
 
 /*데스크탑 (가로 해상도가 992px보다 크고 1199px 보다 작은 화면에 적용)*/
