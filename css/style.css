@@ -13,7 +13,7 @@ input,button,label {margin: 0;padding: 0;border: none;background: none;cursor: p
 img {display: block;border: 0;}
 em {font-style: normal;}
 /* common*/
-._rel{width: 100%}
+._rel{width: 100% !important}
 ._clearfix:after{content:'';display:block;clear:both}
 #_container ._content ._tit_box{padding-bottom: 50px;font-size: 40px;text-align: center}
 #_container ._content{padding: 80px 0}
@@ -126,6 +126,29 @@ em {font-style: normal;}
 #_footer ._footer_wrap ._footer_nav_wrap{float: left;width: 300px;padding: 44px 0 0 25px;color: #555}
 #_footer ._footer_wrap ._footer_nav_wrap ._footer_nav_lst{float: left;position: relative;width: 50%;height: 36px;padding-left: 15px;font-weight: bold;line-height: 36px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;cursor: pointer}
 #_footer ._footer_wrap ._footer_nav_wrap ._footer_nav_lst:before{content: '';position: absolute;top: 13px;left: 0;width: 5px;height: 5px;background-color: #fff;background-color: #555;border-radius: 50%}
+/* portfolio_page */
+#_header._work{width: 100%;height: 60px;left: 0;background: #fff;-webkit-box-shadow: 0 1px 4px #ccc;-moz-box-shadow: 0 1px 4px #ccc;box-shadow: 0 1px 4px #ccc}
+#_header._work #_nav ._nav_title_box{width: 100%;max-width: 1200px;height: 60px;margin: 0 auto}
+#_header._work #_nav ._nav_title_box ._nav_tit{line-height: 60px;text-align: center;font-size: 32px}
+#_container ._spot_wrap{display: table;width: 100%;}
+#_container ._spot_wrap ._spot{display: table-cell;width: 100%;height: 475px;vertical-align: middle;background-image: url(../imgs/ko_spot.jpg);background-repeat: no-repeat}
+#_container ._spot_wrap ._spot ._spot_tit{text-align: center;vertical-align: middle;font-size: 48px;color: #fff}
+#_container ._spot_wrap ._spot ._spot_txt{text-align: center;vertical-align: middle;font-size: 20px;color: #fff}
+#_container ._port_content{width: 100%;max-width: 1200px;margin: 0 auto;margin-top: 30px;padding-top: 30px}
+#_container ._port_content ._dec_box{position: relative;width: 97%;margin-top: 30px;padding-left: 3%}
+#_container ._port_content ._dec_box:before{content: '';position: absolute;left: 1%;width: 2px;height: 100%;background-color: #10247d}
+#_container ._port_content ._dec ._tit{font-size: 24px;font-weight: bold;color: #222}
+#_container ._port_content ._dec ._sub_tit{font-size: 20px;color: #555}
+#_container ._port_content ._dec ._txt{font-size: 16px;color: #555}
+#_container ._port_content ._img_box._w100{width: 100% !important}
+#_container ._port_content ._img_box{width: 60% !important;margin: 0 auto !important}
+#_container ._port_content._sub ._sub_tab{margin: 30px 0}
+#_container ._port_content._sub ._sub_tab a{display: block;float: left;width: 15%;height: 40px;line-height: 40px;text-align: center;font-weight: bold;color: #fff;border-right: 2px solid #fff;background-color: #10247d;-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
+#_container ._port_content._sub ._sub_tab a:hover{background-color:#fff;color: #10247d}
+#_container ._port_content._sub ._sub_tab a._tab_03{width: 25%}
+#_container ._port_content._sub ._dec_box ._dec{display: none}
+#_container ._port_content._sub ._dec_box ._dec._dec_01{display: block}
+#_container ._port_content._epilogue{margin-bottom: 80px}
 /*세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용)*/
 @media only screen and (max-width: 575px) {
     #_container ._content ._tit_box{font-size: 30px}
@@ -168,6 +191,16 @@ em {font-style: normal;}
     #_footer ._footer_wrap ._footer_nav_wrap{position: absolute;top: 116px;width: 100%;padding: 0;padding-top: 10px;text-align: center}
     #_footer ._footer_wrap ._footer_nav_wrap ._footer_nav_lst{height: 25px;padding-left: 0;line-height: 25px;font-size: 12px}
     #_footer ._footer_wrap ._footer_nav_wrap ._footer_nav_lst:before{opacity: 0}
+    /* portfolio */
+    #_header._work #_nav ._nav_title_box ._nav_tit{font-size: 24px}
+    #_container ._spot_wrap ._spot ._spot_tit{font-size: 32px;color: #fff}
+    #_container ._spot_wrap ._spot ._spot_txt{font-size: 18px;color: #fff}
+    #_container ._port_content ._dec ._tit{font-size: 16px}
+    #_container ._port_content ._dec ._sub_tit{font-size: 14px}
+    #_container ._port_content ._dec ._txt{font-size: 12px}
+    #_container ._port_content._sub ._sub_tab a{font-size: 12px}
+    #_footer ._footer_wrap._portfolio ._contact_icon_wrap{padding-top: 80px}
+    #_footer ._footer_wrap._portfolio ._footer_nav_wrap ._footer_nav_lst{width: 100%}
 }
 
 /*가로모드 모바일 디바이스 (가로 해상도가 576px보다 크고 768px 보다 작은 화면에 적용)*/
