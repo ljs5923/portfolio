@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="font/nanumsquare.css">
     <script src="js/jquery-latest.min.js"></script>
     <script src="js/typist/jquery.typist.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
@@ -84,7 +85,6 @@
                             <p class="_txt _point animated fadeIn delay-2s">사람</p>
                         </div>
                     </div>
-                    <!--                    <button type="button" class="_btn _btn_down animated infinite bounce"><i class="_icon _icon_down">다음 content로 이동</i></button>-->
                 </div>
             </article>
             <article id="_content_intro" class="_content _intro">
@@ -108,10 +108,10 @@
                     <div class="_content_wrap">
                         <div class="_content_lsts">
                             <ul class="_lsts">
-                                <li class="_lst _lst1"><a data-slide-index="1">#끈기</a></li>
-                                <li class="_lst _lst2"><a data-slide-index="2">#적응</a></li>
-                                <li class="_lst _lst3"><a data-slide-index="3">#열정</a></li>
-                                <li class="_lst _lst4"><a data-slide-index="4">#소통</a></li>
+                                <li class="_lst _lst1 _active"><a data-slide-index="0">#끈기</a></li>
+                                <li class="_lst _lst2"><a data-slide-index="1">#적응</a></li>
+                                <li class="_lst _lst3"><a data-slide-index="2">#열정</a></li>
+                                <li class="_lst _lst4"><a data-slide-index="3">#소통</a></li>
                             </ul>
                         </div>
                         <div class="_content_con">
@@ -185,18 +185,18 @@
                             </a>
                         </li>
                         <li class="_content_lst _lst02">
-                            <a href="#" class="_btn _btn_link">
+                            <button type="button" class="_btn _btn_link">
                                 <div class="_dec_box">
                                     <strong class="_dec_tit">추가 예정 중</strong>
                                 </div>
-                            </a>
+                            </button>
                         </li>
                         <li class="_content_lst _lst03">
-                            <a href="#" class="_btn _btn_link">
+                            <button type="button" class="_btn _btn_link">
                                 <div class="_dec_box">
                                     <strong class="_dec_tit">추가 예정 중</strong>
                                 </div>
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -275,6 +275,7 @@
             var $intro = $('._intro');
             var $introBtn = $intro.find('._btn');
             var $conWrap02 = $intro.find('._content_wrap');
+            var $conTentLst = $conWrap02.find('._content_lsts');
             $introBtn.on('click', function() {
                 if ($(this).hasClass('_btn_intro')) {
                     $(this).fadeOut(function() {
@@ -290,8 +291,17 @@
                 mode: 'fade',
                 controls: false,
                 pagerCustom: '._lsts',
-                touchEnabled: false
+                touchEnabled: false,
+                onSlideBefore:function($slideElement, oldIndex, newIndex){
+                    $conTentLst.find('._lst').eq(newIndex).addClass('_active').siblings().removeClass('_active');
+                }
             });
+//            portfolio
+            var $portfolio = $('._portfolio');
+            var $noConBtn=$portfolio.find('button');
+            $noConBtn.on('click',function(){
+                alert('추가 예정 중입니다. 기다려주세요!');
+            })
             //skills
             var $skills = $('._skills');
             var $skillsLsts = $skills.find('._content_lsts');
@@ -329,9 +339,8 @@
                 }
                 $gnbLst.off().on('click', function() {
                     var index = $gnbLst.index(this);
-                    articleOTpush();
-                    console.log($articleOT);
                     console.log(index);
+                    articleOTpush();
                     $('html,body').stop().animate({
                         scrollTop: $articleOT[index]
                     }, 500)
@@ -351,7 +360,7 @@
                         });
                     }
                 })
-                $btn.on('click', function() {
+                $btn.off().on('click', function() {
                     if ($(this).hasClass('_show_btn')) {
                         $(this).fadeOut(function() {
                             $header.find('._hidden_btn').fadeIn();

@@ -6,8 +6,10 @@
     <title>고려개발(주) 포토폴리오</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/nanumsquare.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
     <script src="../js/jquery-latest.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script>
 </head>
 
 <body>
@@ -24,6 +26,7 @@
                 <div class="_spot">
                     <p class="_spot_tit"><strong>고려개발(주)</strong></p>
                     <p class="_spot_txt">by_LEE JIN SU</p>
+                    <a href="../ko/index.html" target="_blank" class="_btn _btn_link">제작 사이트로 가기</a>
                 </div>
             </article>
             <article class="_port_content _ko_page">
@@ -93,14 +96,16 @@
                         <a data-slide-index="5" class="_tab_06">직무소개</a>
                     </div>
                 </div>
-                <figure class="_img_box">
-                    <img src="../imgs/value.png" alt="고려개발 가치체계" class="_rel">
-                    <img src="../imgs/history.png" alt="고려개발 주요 연혁" class="_rel">
-                    <img src="../imgs/location.png" alt="고려개발 찾아오시는길" class="_rel">
-                    <img src="../imgs/bi_intro.png" alt="고려개발 사업소개" class="_rel">
-                    <img src="../imgs/kdc_his.png" alt="고려개발 역사관" class="_rel">
-                    <img src="../imgs/kdc_per.png" alt="고려개발 직무소개" class="_rel">
-                </figure>
+                <div class="_img_box">
+                    <ul class="_img_lsts">
+                        <li class="_img_lst"><img src="../imgs/value.png" alt="고려개발 가치체계" class="_sub_img _rel"></li>
+                        <li class="_img_lst"><img src="../imgs/history.png" alt="고려개발 주요 연혁" class="_sub_img _rel"></li>
+                        <li class="_img_lst"><img src="../imgs/location.png" alt="고려개발 찾아오시는길" class="_sub_img _rel"></li>
+                        <li class="_img_lst"><img src="../imgs/bi_intro.png" alt="고려개발 사업소개" class="_sub_img _rel"></li>
+                        <li class="_img_lst"><img src="../imgs/kdc_his.png" alt="고려개발 역사관" class="_sub_img _rel"></li>
+                        <li class="_img_lst"><img src="../imgs/kdc_per.png" alt="고려개발 직무소개" class="_sub_img _rel"></li>
+                    </ul>
+                </div>
             </article>
             <article class="_port_content _epilogue">
                 <div class="_dec_box">
@@ -154,18 +159,20 @@
     </div>
     <script>
         jQuery(function($) {
-            var $decBox = $('._port_content._sub').find('._dec')
-            $('._port_content._sub ._img_box').bxSlider({
-                mode: 'fade',
+            var $decBox = $('._port_content._sub').find('._dec_box');
+            var $dec = $decBox.find('._dec');
+            var decH = $dec.eq(0).outerHeight();
+            $decBox.css('height',decH);
+            $('._img_lsts').bxSlider({
                 adaptiveHeight: true,
-                control:false,
-                pagerCustom:'._sub_tab',
-                nextSelector: $('._next_btn'),
-                prevSelector: $('._prev_btn'),
-                onSlideBefore:function($slideElement, oldIndex, newIndex){
-                    $decBox.eq(oldIndex).fadeOut(function(){
-                        $decBox.eq(newIndex).fadeIn();
-                    });
+                mode: 'fade',
+                controls: false,
+                pagerCustom: '._sub_tab',
+                touchEnabled: false,
+                onSlideBefore: function($slideElement, oldIndex, newIndex) {
+                    decH=$dec.eq(newIndex).outerHeight();
+                    $decBox.css('height',decH);
+                    $dec.eq(newIndex).fadeIn().siblings().fadeOut();
                 }
             })
         })
