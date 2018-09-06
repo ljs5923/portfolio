@@ -6,7 +6,6 @@
  
 @font-face {
   font-family: 'Nanum Square';
-  font-style: normal;
   font-weight: 400;
   src: url(./NanumSquareR.eot);
   src: local('Nanum Square Regular'),
@@ -19,7 +18,6 @@
 
 @font-face {
   font-family: 'Nanum Square';
-  font-style: bold;
   font-weight: 700;
   src: url(./NanumSquareB.eot);
   src: local('Nanum Square Bold'),
