@@ -192,27 +192,8 @@
                     $decBox.css('height', decH);
                     $dec.eq(newIndex).fadeIn().siblings().fadeOut();
                 }
-            });
-            var $spot=$('._spot_wrap');
-            var $koPage = $('._ko_page ._img_box');
-            var $main = $('._main ._img_box');
-            var $sub = $('._sub');
-            $(window).on('scroll', function() {
-                var winST = $(window).scrollTop();
-                var spotH = $spot.height();
-                var koPageOt = $koPage.offset().top;
-                if ((spotH / 2) < winST) {
-                    $koPage.addClass('animated fadeInLeft');
-                } else if (spotH > winST) {
-                    $koPage.removeClass('animated fadeInLeft');
-                } if ((koPageOt)<winST){
-                    $main.addClass('animated fadeInLeft');
-                } else if ((koPageOt)>winST){
-                    $main.removeClass('animated fadeInLeft');
-                }
             })
         })
-
     </script>
 </body>
 

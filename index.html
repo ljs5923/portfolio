@@ -322,10 +322,8 @@
             //            moblie
             $(window).on('load resize', function() {
                 var winW = $(window).width();
-                if (winW < 576) {
                     var winH = $(window).height();
-                    $('._content._main').css('height', winH)
-                }
+                    $('._content._main').css('height', winH);
                 //menu
                 var $header = $('#_header');
                 var $mobileMenu = $header.find('._mobile_menu_wrap');
@@ -342,26 +340,36 @@
                     }
                 }
                 $gnbLst.off().on('click', function() {
-                    var index = $gnbLst.index(this);
-                    console.log(index);
                     articleOTpush();
-                    $('html,body').stop().animate({
-                        scrollTop: $articleOT[index]
-                    }, 500)
-                    if (index > 4 && index < 10) {
-                        index = index - 5;
-                        $('html,body').stop().animate({
-                            scrollTop: $articleOT[index]
-                        }, 500);
-                    } else if (index > 10) {
-                        index = index - 11;
-                        $('html,body').stop().animate({
-                            scrollTop: $articleOT[index]
-                        }, 500);
-                    } else if (index = 10) {
+                    var index = $gnbLst.index(this);
+                    function mobileBtnAni() {
                         $mobileMenu.find('._gnb_wrap').slideUp(function() {
                             $header.find('._mobile_btn').fadeIn();
                         });
+                    }
+                    function scrollAni() {
+                        $('html,body').stop().animate({
+                            scrollTop: $articleOT[index]
+                        }, 500);
+                    }
+                    if (index < 5) {
+                        scrollAni();
+                        $header.find('._hidden_btn').fadeOut(function() {
+                            $header.find('._show_btn').fadeIn();
+                        });
+                        $header.stop().animate({
+                            right: -180
+                        }, 500)
+                    } else if (index > 4 && index < 10) {
+                        index = index - 5;
+                        scrollAni();
+                        mobileBtnAni();
+                    } else if (index > 10) {
+                        index = index - 11;
+                        scrollAni();
+                        mobileBtnAni();
+                    } else if (index = 10) {
+                        mobileBtnAni();
                     }
                 })
                 $btn.off().on('click', function() {
