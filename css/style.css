@@ -12,6 +12,7 @@ input,button,label{margin:0;padding:0;border:none;background:none;cursor:pointer
 img{display:block;border:0}
 em{font-style:normal}
 /* common*/
+html{-webkit-overflow-scrolling : touch;-webkit-text-size-adjust:none}
 ._rel{width:100% !important}
 ._clearfix:after{content:'';display:block;clear:both}
 #_container ._content ._tit{padding-bottom:50px;font-size:40px;font-weight: bold;text-align:center;color:#fff}
@@ -20,7 +21,7 @@ em{font-style:normal}
 #_container{width:100%}
 ._hide_txt{display: none;width: 0;height: 0;text-indent: -9999px}
 /* wrap */
-#wrap{width:100%;height:100%;font-family:'Nanum Square';-webkit-text-size-adjust:none}
+#wrap{width:100%;height:100%;font-family:'Nanum Square'}
 /* header */
 #_header{display:table;position:fixed;top:0;right:-180px;width:270px;height:100%;z-index:80}
 /* navigator */
