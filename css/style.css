@@ -12,7 +12,7 @@ input,button,label{margin:0;padding:0;border:none;background:none;cursor:pointer
 img{display:block;border:0}
 em{font-style:normal}
 /* common*/
-html{-webkit-overflow-scrolling : touch;-webkit-text-size-adjust:none}
+html{-webkit-overflow-scrolling:touch;-webkit-text-size-adjust:none}
 ._rel{width:100% !important}
 ._clearfix:after{content:'';display:block;clear:both}
 #_container ._content ._tit{padding-bottom:50px;font-size:40px;font-weight: bold;text-align:center;color:#fff}

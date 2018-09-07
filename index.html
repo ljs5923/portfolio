@@ -286,11 +286,10 @@
                 var $deskSTbtn = $deskTopMenu.find('._gnb');
                 var $mobileMenu = $header.find('._mobile_menu_wrap');
                 var $mobilSTbtn = $mobileMenu.find('._gnb');
-
                 function menuMoveEvent(menuIndex) {
-                    $('html, body').stop().animate({
+                    $('html, body').animate({
                         scrollTop: menuIndex
-                    }, 500);
+                    }, 1000);
                 }
                 $deskSTbtn.on('click', function() {
                     var scrollPlus = 0;
@@ -303,16 +302,16 @@
                 $mobilSTbtn.on('click', function() {
                     var scrollPlus = 0;
                     var index = $(this).index();
-                    console.log(index);
                     for (i = 0; i < index; i++) {
                         scrollPlus += $('article').eq(i).outerHeight(true);
-                    }
+                    }                    
+                    console.log(scrollPlus);
                     if (index < 5) {
-                        menuMoveEvent(scrollPlus);
                         $mobileMenu.find('._gnb_wrap').slideUp(function() {
                             $mobileMenu.find('._mobile_btn').fadeIn();
                         });
-                    } else if (index = 5    ) {
+                        menuMoveEvent(scrollPlus);
+                    } else if (index = 5) {
                         $mobileMenu.find('._gnb_wrap').slideUp(function() {
                             $header.find('._mobile_btn').fadeIn()
                         });
