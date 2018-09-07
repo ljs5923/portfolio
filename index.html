@@ -73,7 +73,7 @@
         </header>
         <section id="_container">
             <h1 class="_tit _hide_txt">이진수의 포토폴리오</h1>
-            <article id="_content1" class="_content _main">
+            <article id="_content_main" class="_content _main">
                 <h2 class="_hide_txt">Main</h2>
                 <div class="_content_container">
                     <div class="_content_wrap">
@@ -89,19 +89,19 @@
                     </div>
                 </div>
             </article>
-            <article id="_content2" class="_content _intro">
+            <article id="_content_intro" class="_content _intro">
                 <h2 class="_tit"><button type="button" class="_btn _btn_tit">#About Me</button></h2>
                 <div class="_content_container">
                     <div class="_content_intro">
                         <button class="_btn _btn_intro">
-                       <img src="imgs/intro_img.jpg" alt="이진수이미지">
-                       <span class="_dec_box">
-                            <span class="_txt"><strong>1992.09.24</strong></span>
-                            <span class="_txt"><strong>이진수 (LEE JIN SU)</strong></span>
-                            <span class="_txt">강릉원주대학교 원주캠퍼스</span>
-                            <span class="_txt">정보기술공학과 (18.02 졸업)</span>
-                        </span>
-                   </button>
+                            <img src="imgs/intro_img.jpg" alt="이진수이미지">
+                            <span class="_dec_box">
+                                <span class="_txt"><strong>1992.09.24</strong></span>
+                                <span class="_txt"><strong>이진수 (LEE JIN SU)</strong></span>
+                                <span class="_txt">강릉원주대학교 원주캠퍼스</span>
+                                <span class="_txt">정보기술공학과 (18.02 졸업)</span>
+                            </span>
+                        </button>
                     </div>
                     <div class="_content_wrap">
                         <div class="_content_lsts">
@@ -133,7 +133,7 @@
                     </div>
                 </div>
             </article>
-            <article id="_content3" class="_content _skills">
+            <article id="_content_skills" class="_content _skills">
                 <h2 class="_tit">#Skills</h2>
                 <div class="_content_wrap">
                     <ul class="_content_lsts _clearfix">
@@ -160,7 +160,7 @@
                     </ul>
                 </div>
             </article>
-            <article id="_content4" class="_content _portfolio">
+            <article id="_content_portfolio" class="_content _portfolio">
                 <h2 class="_tit">#Portfolio</h2>
                 <div class="_content_wrap">
                     <ul class="_content_lsts">
@@ -195,7 +195,7 @@
                     </ul>
                 </div>
             </article>
-            <article id="_content5" class="_content _ambition">
+            <article id="_content_ambition" class="_content _ambition">
                 <h2 class="_tit">#Ambition</h2>
                 <div class="_content_container">
                     <div class="_content_wrap">
@@ -232,14 +232,10 @@
                             <a href="https://github.com/ljs5923" target="_blank" class="_icon _git_icon"></a>
                         </li>
                         <li class="_contact_icon_lst _w3c">
-                            <p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px"
-			src="//jigsaw.w3.org/css-validator/images/vcss"
-			alt="올바른 CSS입니다!" /></a></p>
+                            <p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="//jigsaw.w3.org/css-validator/images/vcss" alt="올바른 CSS입니다!" /></a></p>
                         </li>
                         <li class="_contact_icon_lst _w3c">
-                            <p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px"
-			src="//jigsaw.w3.org/css-validator/images/vcss-blue"
-			alt="올바른 CSS입니다!" /></a></p>
+                            <p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="//jigsaw.w3.org/css-validator/images/vcss-blue" alt="올바른 CSS입니다!" /></a></p>
                         </li>
                     </ul>
                 </div>
@@ -258,133 +254,135 @@
     </div>
     <script>
         jQuery(function($) {
-            $(document).ready(function() {
-                $(window).on('load resize', function() {
-                    var winH = $(window).height();
-                    $('._content._main').css('height', winH);
-                })
-                //typist
-                var $main = $('._main');
-                var $titBox01 = $main.find('._tit_box');
-                var $tit = $titBox01.find('._tit');
-                var $btn01 = $main.find('._btn')
-                $btn01.on('click', function() {
-                    var con02H = $intro.offset().top;
-                    $('html, body').animate({
-                        scrollTop: con02H
-                    }, 500);
-                })
-                $tit.typist({
-                    speed: 5,
-                    text: 'WEB PUBLISHER'
-                }).typistStop();
-                //            menu
-                var $header = $('#_header');
-                var $btnWrap = $header.find('._gnb_button');
-                var $btn = $btnWrap.find('._btn');
-                var $deskTopMenu = $header.find('._desk_menu_wrap');
-                var $deskSTbtn = $deskTopMenu.find('._gnb');
-                var $mobileMenu = $header.find('._mobile_menu_wrap');
-                var $mobilSTbtn = $mobileMenu.find('._gnb');
-                function menuMoveEvent(menuIndex) {
-                    $('html, body').animate({
-                        scrollTop: menuIndex
-                    }, 1000);
+            $(window).on('load resize', function() {
+                var winH = $(window).height();
+                $('._content._main').css('height', winH);
+            });
+            //typist
+            var $main = $('._main');
+            var $titBox01 = $main.find('._tit_box');
+            var $tit = $titBox01.find('._tit');
+            $tit.typist({
+                speed: 5,
+                text: 'WEB PUBLISHER'
+            }).typistStop();
+            //            menu
+            var $header = $('#_header');
+            var $btnWrap = $header.find('._gnb_button');
+            var $btn = $btnWrap.find('._btn');
+            var $deskTopMenu = $header.find('._desk_menu_wrap');
+            var $deskSTbtn = $deskTopMenu.find('._gnb');
+            var $mobileMenu = $header.find('._mobile_menu_wrap');
+            var $mobilSTbtn = $mobileMenu.find('._gnb');
+            var $footer = $('#_footer');
+            var $footerNav = $footer.find('._footer_nav');
+            var $footerNavBtn = $footerNav.find('._footer_nav_lst');
+
+            function menuMoveEvent(menuIndex) {
+                $('html, body').animate({
+                    scrollTop: menuIndex
+                }, 1000);
+            }
+            $deskSTbtn.on('click', function() {
+                var scrollPlus = 0;
+                var index = $(this).index();
+                for (i = 0; i < index; i++) {
+                    scrollPlus += $('article').eq(i).outerHeight(true);
                 }
-                $deskSTbtn.on('click', function() {
-                    var scrollPlus = 0;
-                    var index = $(this).index();
-                    for (i = 0; i < index; i++) {
-                        scrollPlus += $('article').eq(i).outerHeight(true);
-                    }
+                menuMoveEvent(scrollPlus);
+            });
+            $mobilSTbtn.on('click', function() {
+                var scrollPlus = 0;
+                var index = $(this).index();
+                for (i = 0; i < index; i++) {
+                    scrollPlus += $('article').eq(i).outerHeight(true);
+                }
+                if (index < 5) {
+                    $mobileMenu.find('._gnb_wrap').slideUp(function() {
+                        $mobileMenu.find('._mobile_btn').fadeIn();
+                    });
                     menuMoveEvent(scrollPlus);
-                });
-                $mobilSTbtn.on('click', function() {
-                    var scrollPlus = 0;
-                    var index = $(this).index();
-                    for (i = 0; i < index; i++) {
-                        scrollPlus += $('article').eq(i).outerHeight(true);
-                    }                    
-                    console.log(scrollPlus);
-                    if (index < 5) {
-                        $mobileMenu.find('._gnb_wrap').slideUp(function() {
-                            $mobileMenu.find('._mobile_btn').fadeIn();
-                        });
-                        menuMoveEvent(scrollPlus);
-                    } else if (index = 5) {
-                        $mobileMenu.find('._gnb_wrap').slideUp(function() {
-                            $header.find('._mobile_btn').fadeIn()
-                        });
-                    }
-                })
-                $btn.off().on('click', function() {
-                    if ($(this).hasClass('_show_btn')) {
-                        $(this).fadeOut(function() {
-                            $header.find('._hidden_btn').fadeIn();
-                        });
-                        $header.stop().animate({
-                            right: 0
-                        }, 500)
-                    } else if ($(this).hasClass('_hidden_btn')) {
-                        $(this).fadeOut(function() {
-                            $header.find('._show_btn').fadeIn();
-                        });
-                        $header.stop().animate({
-                            right: -180
-                        }, 500)
-                    } else if ($(this).hasClass('_mobile_btn')) {
-                        $(this).fadeOut(function() {
-                            $mobileMenu.find('._gnb_wrap').slideDown();
-                        })
-                    }
-                })
-                //intro
-                var $intro = $('._intro');
-                var $introConIntro = $intro.find('._content_intro');
-                var $introBtn = $intro.find('._btn');
-                var $conWrap02 = $intro.find('._content_wrap');
-                var $conTentLst = $conWrap02.find('._content_lsts');
-                $introBtn.on('click', function() {
-                    if ($(this).hasClass('_btn_intro')) {
-                        $introConIntro.fadeOut(function() {
-                            $conWrap02.fadeIn();
-                        });
-                    } else if ($(this).hasClass('_btn_tit')) {
-                        $conWrap02.fadeOut(function() {
-                            $introConIntro.fadeIn();
-                        });
-                    }
-                });
-                $('._content_con_lsts ._lsts').bxSlider({
-                    mode: 'fade',
-                    controls: false,
-                    pagerCustom: '._lsts',
-                    touchEnabled: false,
-                    onSlideBefore: function($slideElement, oldIndex, newIndex) {
-                        $conTentLst.find('._lst').eq(newIndex).addClass('_active').siblings().removeClass('_active');
-                    }
-                });
-                //            portfolio
-                var $portfolio = $('._portfolio');
-                var $noConBtn = $portfolio.find('._btn_no_link');
-                $noConBtn.on('click', function() {
-                    alert('추가 예정 중입니다. 기다려주세요!');
-                })
-                //skills
-                var $skills = $('._skills');
-                var $skillsLsts = $skills.find('._content_lsts');
-                var $skillsLst = $skillsLsts.find('._content_lst');
-                $(window).on('scroll', function() {
-                    var winST = $(window).scrollTop();
-                    var introOT = $intro.offset().top;
-                    var skillsOT = $skills.offset().top;
-                    if ((introOT + introOT / 2) < winST) {
-                        $skillsLst.addClass('animated fadeInUp');
-                    } else if (skillsOT > winST) {
-                        $skillsLst.removeClass('animated fadeInUp');
-                    }
-                });
+                } else if (index = 5) {
+                    $mobileMenu.find('._gnb_wrap').slideUp(function() {
+                        $header.find('._mobile_btn').fadeIn()
+                    });
+                }
             })
+            $footerNavBtn.on('click', function() {
+                var scrollPlus = 0;
+                var index = $(this).index();
+                for (i = 0; i < index; i++) {
+                    scrollPlus += $('article').eq(i).outerHeight(true);
+                }
+                menuMoveEvent(scrollPlus);
+            })
+            $btn.off().on('click', function() {
+                if ($(this).hasClass('_show_btn')) {
+                    $(this).fadeOut(function() {
+                        $header.find('._hidden_btn').fadeIn();
+                    });
+                    $header.stop().animate({
+                        right: 0
+                    }, 500)
+                } else if ($(this).hasClass('_hidden_btn')) {
+                    $(this).fadeOut(function() {
+                        $header.find('._show_btn').fadeIn();
+                    });
+                    $header.stop().animate({
+                        right: -180
+                    }, 500)
+                } else if ($(this).hasClass('_mobile_btn')) {
+                    $(this).fadeOut(function() {
+                        $mobileMenu.find('._gnb_wrap').slideDown();
+                    })
+                }
+            })
+            //intro
+            var $intro = $('._intro');
+            var $introConIntro = $intro.find('._content_intro');
+            var $introBtn = $intro.find('._btn');
+            var $conWrap02 = $intro.find('._content_wrap');
+            var $conTentLst = $conWrap02.find('._content_lsts');
+            $introBtn.on('click', function() {
+                if ($(this).hasClass('_btn_intro')) {
+                    $introConIntro.fadeOut(function() {
+                        $conWrap02.fadeIn();
+                    });
+                } else if ($(this).hasClass('_btn_tit')) {
+                    $conWrap02.fadeOut(function() {
+                        $introConIntro.fadeIn();
+                    });
+                }
+            });
+            $('._content_con_lsts ._lsts').bxSlider({
+                mode: 'fade',
+                controls: false,
+                pagerCustom: '._lsts',
+                touchEnabled: false,
+                onSlideBefore: function($slideElement, oldIndex, newIndex) {
+                    $conTentLst.find('._lst').eq(newIndex).addClass('_active').siblings().removeClass('_active');
+                }
+            });
+            //            portfolio
+            var $portfolio = $('._portfolio');
+            var $noConBtn = $portfolio.find('._btn_no_link');
+            $noConBtn.on('click', function() {
+                alert('추가 예정 중입니다. 기다려주세요!');
+            })
+            //skills
+            var $skills = $('._skills');
+            var $skillsLsts = $skills.find('._content_lsts');
+            var $skillsLst = $skillsLsts.find('._content_lst');
+            $(window).on('scroll', function() {
+                var winST = $(window).scrollTop();
+                var introOT = $intro.offset().top;
+                var skillsOT = $skills.offset().top;
+                if ((introOT + introOT / 2) < winST) {
+                    $skillsLst.addClass('animated fadeInUp');
+                } else if (skillsOT > winST) {
+                    $skillsLst.removeClass('animated fadeInUp');
+                }
+            });
         })
     </script>
 </body>

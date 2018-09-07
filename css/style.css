@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* reset */
 html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,a,abbr,address,img,ol,ul,li,fieldset,form,label,legend,tbody,tfoot,thead,tr,th,td,dl,dt,dd,article,aside,canvas,figure,figcaption,footer,header,hgroup,menu,nav,section,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
-html,body{width:100%;height:100%;overflow-x: hidden}
+html,body{width:100%;height:100%}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 a{text-decoration:none;color:#555;cursor:pointer}
 body{line-height:1.5}
@@ -16,7 +16,7 @@ html{-webkit-overflow-scrolling:touch;-webkit-text-size-adjust:none}
 ._rel{width:100% !important}
 ._clearfix:after{content:'';display:block;clear:both}
 #_container ._content ._tit{padding-bottom:50px;font-size:40px;font-weight: bold;text-align:center;color:#fff}
-#_container ._content{position: relative;padding:80px 0}
+#_container ._content{position: relative;padding: 80px 0}
 ._icon{display:inline-block;text-indent:-9999px}
 #_container{width:100%}
 ._hide_txt{display: none;width: 0;height: 0;text-indent: -9999px}
