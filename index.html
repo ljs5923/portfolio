@@ -11,6 +11,13 @@
     <script src="js/jquery-latest.min.js"></script>
     <script src="js/typist/jquery.typist.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <!--IE10 이하 브라우저-->
+    <!--[if IE]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+      <style>
+        #wrap{overflow-x:hidden;}
+      </style>
+    <![endif]-->
 </head>
 
 <body>
@@ -94,7 +101,7 @@
                 <div class="_content_container">
                     <div class="_content_intro">
                         <button class="_btn _btn_intro">
-                            <img src="imgs/intro_img.jpg" alt="이진수이미지">
+                            <img src="imgs/main/intro_img.jpg" alt="이진수이미지">
                             <span class="_dec_box">
                                 <span class="_txt"><strong>1992.09.24</strong></span>
                                 <span class="_txt"><strong>이진수 (LEE JIN SU)</strong></span>
@@ -167,21 +174,28 @@
                         <li class="_content_lst _lst01">
                             <a href="portfolio/ko.html" class="_btn _btn_link">
                                 <figure class="_img_box">
-                                    <img src="imgs/port01.png" alt="포토폴리오01" class="_rel">
+                                    <img src="imgs/main/port01.png" alt="포토폴리오01" class="_rel">
                                     <div class="_go_box">
                                         <p class="_go_txt">상세보기</p>
                                     </div>
                                 </figure>
                                 <div class="_dec_box">
                                     <strong class="_dec_tit">고려개발(주)</strong>
-                                    <p class="_dec_txt">HTML5 / CSS3 / JavaScript / jQuery</p>
+                                    <p class="_dec_txt">HTML5 / CSS3 / JavaScript / jQuery / publishing(100%)</p>
                                 </div>
                             </a>
                         </li>
                         <li class="_content_lst _lst02">
-                            <a class="_btn _btn_no_link">
+                            <a href="portfolio/sos.html" class="_btn _btn_link">
+                                <figure class="_img_box">
+                                    <img src="imgs/main/port02.png" alt="포토폴리오01" class="_rel">
+                                    <div class="_go_box">
+                                        <p class="_go_txt">상세보기</p>
+                                    </div>
+                                </figure>
                                 <div class="_dec_box">
-                                    <strong class="_dec_tit">추가 예정 중</strong>
+                                    <strong class="_dec_tit">SOSFESTIVAL</strong>
+                                    <p class="_dec_txt">HTML5 / CSS3 / JavaScript / jQuery / publishing(100%)</p>
                                 </div>
                             </a>
                         </li>
@@ -218,7 +232,7 @@
                 </div>
                 <div class="_contact_icon_wrap">
                     <figure class="_img_box">
-                        <img src="imgs/footer_icon.png" alt="footer icon logo" class="_rel">
+                        <img src="imgs/main/footer_icon.png" alt="footer icon logo" class="_rel">
                     </figure>
                     <ul class="_contact_icon _clearfix">
                         <li class="_contact_icon_lst"><a href="https://plus.google.com/u/0/114845030938189679206" target="_blank" class="_icon _gg_icon"></a></li>
@@ -279,7 +293,7 @@
             var $footerNavBtn = $footerNav.find('._footer_nav_lst');
 
             function menuMoveEvent(menuIndex) {
-                $('html, body').animate({
+                $('html, body').stop().animate({
                     scrollTop: menuIndex
                 }, 1000);
             }
@@ -384,6 +398,7 @@
                 }
             });
         })
+
     </script>
 </body>
 
