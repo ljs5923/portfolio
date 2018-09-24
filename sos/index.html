@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile_style.css">
     <link rel="stylesheet" href="css/fullpage/fullpage.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="font/nanumsquare.css">
     <script src="js/jquery-latest.min.js"></script>
     <script src="js/fullpage/fullpage.min.js"></script>
@@ -82,7 +81,7 @@
                             <p class="_date_txt">8월 10일, 11일 | 서울광장</p>
                             <p class="_txt">PROGRAM</p>
                             <p class="_locatxt">서울씨네뮤직 | 모기장 영화제 | 디지펀 아트<br>축제속의축제 | 힐링쉼터</p>
-                            <a href="" class="_btn _link">자세히 알아보기</a>
+                            <a href="cultule/cultule.html" class="_btn _link">자세히 알아보기</a>
                         </div>
                     </div>
                     <div class="_content_bott _clearfix">
@@ -111,7 +110,7 @@
                             <p class="_date_txt">8월 10일, 11일 | 서울광장</p>
                             <p class="_txt">PROGRAM</p>
                             <p class="_locatxt">썸머 쿨 패션쇼 | 그래픽 공연<br>힙합·비보이 공연 | 그래피티 쇼</p>
-                            <a href="" class="_btn _link">자세히 알아보기</a>
+                            <a href="cultule/cultule2.html" class="_btn _link">자세히 알아보기</a>
                         </div>
                     </div>
                     <div class="_content_top _content_top_2ed">
@@ -124,7 +123,7 @@
                             <p class="_date_txt">8월 11일 | 광화문광장</p>
                             <p class="_txt">PROGRAM</p>
                             <p class="_locatxt">한여름의 눈 조각전 | 8월의 크리스마스 트리<br>무궁화 축제 (산림청)</p>
-                            <a href="" class="_btn _link">자세히 알아보기</a>
+                            <a href="cultule/cultule3.html" class="_btn _link">자세히 알아보기</a>
                         </div>
                     </div>
                 </div>
@@ -145,7 +144,7 @@
                             <p class="_date_txt">8월 10일, 11일</p>
                             <p class="_txt">LOCATION</p>
                             <p class="_locatxt">서울시립미술관 | 서울역사박물관 | 시민청<br>서울도서관 | 대한민국역사박물관 | 세종문화회관</p>
-                            <a href="" class="_btn _link">자세히 알아보기</a>
+                            <a href="art/art.html" class="_btn _link">자세히 알아보기</a>
                         </div>
                     </div>
                 </div>
@@ -195,6 +194,7 @@
     </div>
     <script>
         jQuery(function($) {
+//            width값 574px이하시 100% 화면
             $(window).on('load resize', function() {
                 var winW = $(window).width();
                 if (winW > 575) {
@@ -203,6 +203,7 @@
                     $('#_header').removeClass('fp-auto-height');
                 }
             });
+//            fullpage.js
             $('#fullpage').fullpage({
                 licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                 menu: '#_anchor_wrap',

@@ -1,4 +1,5 @@
 jQuery(function ($) {
+//    mobile menu
     var $header = $('#_header');
     var $mobileBtnMenu = $header.find('._menu_btn_wrap');
     var $mobileBtn = $mobileBtnMenu.find('button._menu_btn');

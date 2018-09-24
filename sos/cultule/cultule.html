@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mobile_style.css">
-    <link rel="stylesheet" href="../css/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="../font/nanumsquare.css">
     <script src="../js/jquery-latest.min.js"></script>
@@ -725,8 +724,10 @@
     </div>
     <script>
         jQuery(function($) {
+//            fancybox.js start
             $('._view1').fancybox();
             $('._view2').fancybox();
+//            width값 768px이하시 100%
             $(window).on('load resize', function() {
                 var winH = $(window).height();
                 var winW = $(window).width();

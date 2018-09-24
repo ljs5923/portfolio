@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mobile_style.css">
-    <link rel="stylesheet" href="../css/animate.min.css">
     <link rel="stylesheet" href="../font/nanumsquare.css">
     <script src="../js/jquery-latest.min.js"></script>
     <script src="../js/common.js"></script>
@@ -309,6 +308,7 @@
     </div>
     <script>
         jQuery(function($) {
+//            width값 768px이하시 100%
             $(window).on('load resize', function() {
                 var winH = $(window).height();
                 var winW = $(window).width();
