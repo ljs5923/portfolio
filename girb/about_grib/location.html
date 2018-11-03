@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Grib portfolio site">
+    <meta name="keywords" content="web publisher portfolio, 웹 퍼블리셔 포트폴리오, 반응형웹, 접근성, 홈페이지">
+    <meta name="author" content="Lee Jin Su">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/nanumsquare.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <script src="../js/jquery-latest.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=lSNu4zI7g4qH0bR3ANdF&submodules=geocoder"></script>
+    <title>위치안내</title>
+</head>
+
+<body>
+    <div id="_wrap">
+        <div id="_skip_menu_wrap">
+            <a href="#_container">본문 바로가기</a>
+            <a href="#_gnb">메뉴 바로가기</a>
+        </div>
+        <header id="_header">
+            <h1 class="_logo">
+                <a href="../index.html">
+                    <img src="../imgs/index/logo.png" alt="grib" class="_rel">
+                </a>
+            </h1>
+            <div class="_gnb_btn_wrap">
+                <button class="_gnb_btn">
+                    <span class="_gnb_line _top"></span>
+                    <span class="_gnb_line _mid"></span>
+                    <span class="_gnb_line _bot"></span>
+                </button>
+            </div>
+            <div class="_sub_gnb_btn_wrap">
+                <button class="_sub_gnb_btn"></button>
+                <ul class="_sub_gnb_lsts">
+                    <li class="_sub_gnb_lst">
+                        <a href="../about_grib/over_view.html">회사개요</a>
+                    </li>
+                    <li class="_sub_gnb_lst">
+                        <a href="../about_grib/news.html">그립 소식</a>
+                    </li>
+                    <li class="_sub_gnb_lst _active">
+                        <a href="#none">위치 안내</a>
+                    </li>
+                    <li class="_sub_gnb_lst">
+                        <a href="../about_grib/download.html">다운로드</a>
+                    </li>
+                    <li class="_sub_gnb_lst">
+                        <a href="../about_grib/board_write.html">협업문의</a>
+                    </li>
+                </ul>
+            </div>
+            <nav class="_gnb_wrap">
+                <div class="_gnb_box">
+                    <ul class="_gnb">
+                        <li class="_gnb_lst">
+                            <a href="../../index.html" class="_lst_tit">Home</a>
+                        </li>
+                        <li class="_gnb_lst">
+                            <p class="_lst_tit">IoT Device</p>
+                            <ul class="_gnb_sub">
+                                <li>
+                                    <a href="../iot_device/iot_hub_stand.html">- IoT Hub (Stand-alone type)</a>
+                                </li>
+                                <li>
+                                    <a href="../iot_device/iot_hub_dongle.html">- IoT Hub (Dongle type)</a>
+                                </li>
+                                <li>
+                                    <a href="../iot_device/iot_gas_lock.html">- IoT Gas Lock</a>
+                                </li>
+                                <li>
+                                    <a href="../iot_device/z_wave_repeater.html">- Z-Wave-Repeater</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_gnb_lst">
+                            <p class="_lst_tit">Platform & Solution</p>
+                            <ul class="_gnb_sub">
+                                <li>
+                                    <a href="../platform_solution/platform_g.html">- Platform@G</a>
+                                </li>
+                                <li>
+                                    <a href="../platform_solution/cloud_streaming.html">- Cloud Streaming</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_gnb_lst">
+                            <p class="_lst_tit">Service</p>
+                            <ul class="_gnb_sub">
+                                <li>
+                                    <a href="../service/service.html">- Service</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_gnb_lst">
+                            <p class="_lst_tit">About Grib</p>
+                            <ul class="_gnb_sub">
+                                <li>
+                                    <a href="../about_grib/over_view.html">- 회사개요</a>
+                                </li>
+                                <li>
+                                    <a href="../about_grib/news.html">- 그립소식</a>
+                                </li>
+                                <li>
+                                    <a href="../about_grib/location.html">- 위치안내</a>
+                                </li>
+                                <li>
+                                    <a href="../about_grib/download.html">- 다운로드</a>
+                                </li>
+                                <li>
+                                    <a href="../about_grib/board_write.html">- 협업문의</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="_content_menu_wrap">
+            <ul class="_content_menu">
+                <li class="_content_menu_lst">
+                    <a href="../iot_device/iot_hub_stand.html">I<span>oT Device</span></a>
+                </li>
+                <li class="_content_menu_lst">
+                    <a href="../platform_solution/platform_g.html">P<span>latform&Solution</span></a>
+                </li>
+                <li class="_content_menu_lst">
+                    <a href="../service/service.html">S<span>ervice</span></a>
+                </li>
+                <li class="_content_menu_lst active">
+                    <a href="../about_grib/over_view.html">A<span>bout Grib</span></a>
+                </li>
+            </ul>
+        </div>
+        <section id="_container" class="_about_grib _location">
+            <article class="_content_wrap _content01">
+                <div class="_content">
+                    <h2 class="_tit">위치안내</h2>
+                    <p class="_txt">그립의 위치를 확인해보세요.</p>
+                </div>
+            </article>
+            <article class="_content_wrap _content02">
+                <div class="_content">
+                    <h3 class="_sub_tit">위치안내</h3>
+                    <div class="_info_box_wrap">
+                        <ul class="_info_box">
+                            <li>
+                                <span>TEL </span>
+                                <em>02-521-6542</em>
+                            </li>
+                            <li>
+                                <span>Email</span>
+                                <a href="mailto:manager@grib.co.kr">manager@grib.co.kr</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="_map_container _clearfix">
+                        <div class="_map_wrap">
+                            <h3 class="_sub_tit">Head Office</h3>
+                            <div id="_map1" class="_map"></div>
+                        </div>
+                        <div class="_map_wrap">
+                            <h3 class="_sub_tit">Device Lab</h3>
+                            <div id="_map2" class="_map"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer id="_footer" class="section fp-auto-height" data-anchor="lastPage">
+            <div class="_footer_top_wrap">
+                <div class="_footer_top">
+                    <ul class="_move_site _clearfix">
+                        <li class="_move_site_lst">
+                            <a href="../iot_device/iot_hub_stand.html">IoT Device</a>
+                        </li>
+                        <li class="_move_site_lst">
+                            <a href="../platform_solution/platform_g.html">Platform&Solution</a>
+                        </li>
+                        <li class="_move_site_lst">
+                            <a href="../service/service.html">Service</a>
+                        </li>
+                        <li class="_move_site_lst">
+                            <a href="../about_grib/over_view.html">About Grib</a>
+                        </li>
+                    </ul>
+                    <a href="http://www.grib.co.kr/" class="_btn_grib">
+                        Grib 홉페이지<span>GO</span>
+                    </a>
+                    <div class="_scroll_top_btn">
+                        <a href="#1stPage" title="TOP">
+                            <img src="../imgs/index/btn_top.png" alt="TOP" class="_rel">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="_footer_bot_wrap">
+                <div class="_footer_bot">
+                    <adress>서울특별시 서초구 효령로 242 서양빌딩 5층 (주)그립<span class="_number">TEL : 02-521-6542&nbsp;&nbsp;FAX : 02-521-6508</span></adress>
+                    <span class="_kbrain_icon_wrap">
+                        <img src="../imgs/index/kbrain.png" alt="Kbrain img">
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        jQuery(function() {
+            var mapDiv1 = document.getElementById('_map1');
+            var mapDiv2 = document.getElementById('_map2');
+            
+            var map1 = new naver.maps.Map(mapDiv1, {
+                center: new naver.maps.LatLng(37.483866, 127.010521),
+                zoom: 11,
+                zoomControl: true,
+                zoomControlOptions: {
+                    style: naver.maps.ZoomControlStyle.SMALL,
+                    position: naver.maps.Position.TOP_RIGHT
+                }
+            });
+            var map2 = new naver.maps.Map(mapDiv2, {
+                center: new naver.maps.LatLng(37.366207, 127.106404),
+                zoom: 11,
+                zoomControl: true,
+                zoomControlOptions: {
+                    style: naver.maps.ZoomControlStyle.SMALL,
+                    position: naver.maps.Position.TOP_RIGHT
+                }
+            });
+            
+            var marker1 = new naver.maps.Marker({
+                position: new naver.maps.LatLng(37.483866, 127.010521),
+                map: map1
+            });
+            var marker2 = new naver.maps.Marker({
+                position: new naver.maps.LatLng(37.366207, 127.106404),
+                map: map2
+            });
+            
+            map1.setOptions({ //지도 인터랙션 끄기
+                draggable: false,
+                pinchZoom: false,
+                scrollWheel: false,
+                keyboardShortcuts: false,
+                disableDoubleTapZoom: true,
+                disableDoubleClickZoom: true,
+                disableTwoFingerTapZoom: true
+            });
+            map2.setOptions({ //지도 인터랙션 끄기
+                draggable: false,
+                pinchZoom: false,
+                scrollWheel: false,
+                keyboardShortcuts: false,
+                disableDoubleTapZoom: true,
+                disableDoubleClickZoom: true,
+                disableTwoFingerTapZoom: true
+            });
+        }); //jQuery end
+
+    </script>
+</body>
+
+</html>

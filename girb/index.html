@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Grib portfolio site">
+    <meta name="keywords" content="web publisher portfolio, 웹 퍼블리셔 포트폴리오, 반응형웹, 접근성, 홈페이지">
+    <meta name="author" content="Lee Jin Su">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grip</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/nanumsquare.css">
+    <link rel="stylesheet" href="css/fullpage/fullpage.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery-latest.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/fullpage/fullpage.min.js"></script>
+    <script src="js/object-fit-videos.min.js"></script>
+</head>
+
+<body>
+    <div id="_wrap">
+        <div id="_skip_menu_wrap">
+            <a href="#_container">본문 바로가기</a>
+            <a href="#_gnb">메뉴 바로가기</a>
+        </div>
+        <header id="_header" class="_main">
+            <h1 class="_logo">
+                <a href="index.html">
+                    <img src="imgs/index/logo.png" alt="grib" class="_rel">
+                </a>
+            </h1>
+            <div class="_gnb_btn_wrap">
+                <button class="_gnb_btn">
+                    <span class="_gnb_line _top"></span>
+                    <span class="_gnb_line _mid"></span>
+                    <span class="_gnb_line _bot"></span>
+                </button>
+            </div>
+            <nav class="_gnb_wrap">
+                <div class="_gnb_box">
+                    <ul class="_gnb">
+                        <li class="_gnb_lst">
+                            <a href="index.html" class="_lst_tit">Home</a>
+                        </li>
+                        <li class="_gnb_lst">
+                            <p class="_lst_tit">IoT Device</p>
+                            <ul class="_gnb_sub">
+                                <li>
+                                    <a href="iot_device/iot_hub_stand.html">- IoT Hub (Stand-alone type)</a>
+                                </li>
+                                <li>
+                                    <a href="iot_device/iot_hub_dongle.html">- IoT Hub (Dongle type)</a>
+                                </li>
+                                <li>
+                                    <a href="iot_device/iot_gas_lock.html">- IoT Gas Lock</a>
+                                </li>
+                                <li>
+                                    <a href="iot_device/z_wave_repeater.html">- Z-Wave-Repeater</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_gnb_lst">
+                            <p class="_lst_tit">Platform & Solution</p>
+                            <ul class="_gnb_sub">
+                                <li>
+                                    <a href="platform_solution/platform_g.html">- Platform@G</a>
+                                </li>
+                                <li>
+                                    <a href="platform_solution/cloud_streaming.html">- Cloud Streaming</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_gnb_lst">
+                            <p class="_lst_tit">Service</p>
+                            <ul class="_gnb_sub">
+                                <li>
+                                    <a href="service/service.html">- Service</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_gnb_lst">
+                            <p class="_lst_tit">About Grib</p>
+                            <ul class="_gnb_sub">
+                                <li>
+                                    <a href="about_grib/over_view.html">- 회사개요</a>
+                                </li>
+                                <li>
+                                    <a href="about_grib/news.html">- 그립소식</a>
+                                </li>
+                                <li>
+                                    <a href="about_grib/location.html">- 위치안내</a>
+                                </li>
+                                <li>
+                                    <a href="about_grib/download.html">- 다운로드</a>
+                                </li>
+                                <li>
+                                    <a href="about_grib/board_write.html">- 협업문의</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="_content_menu_wrap">
+            <ul class="_content_menu">
+                <li class="_content_menu_lst active" data-menuanchor="1stPage">
+                    <a href="#1stPage">G<span>rib</span></a>
+                </li>
+                <li class="_content_menu_lst" data-menuanchor="2ndPage">
+                    <a href="#2ndPage">I<span>oT Device</span></a>
+                </li>
+                <li class="_content_menu_lst" data-menuanchor="3rdPage">
+                    <a href="#3rdPage">P<span>latform&Solution</span></a>
+                </li>
+                <li class="_content_menu_lst" data-menuanchor="4thPage">
+                    <a href="#4thPage">S<span>ervice</span></a>
+                </li>
+                <li class="_content_menu_lst" data-menuanchor="5thPage">
+                    <a href="#5thPage">A<span>bout Grib</span></a>
+                </li>
+            </ul>
+        </div>
+        <div id="_scroll_down_wrap" class="_scroll_down animated infinite bounce">
+            <a href="#" class="_scroll_dwon_btn">
+                <img src="imgs/index/ico_scroll.png" class="_rel" alt="scrolldown">
+            </a>
+        </div>
+        <section id="_container">
+            <div id="fullpage">
+                <article id="_section01" class="section" data-anchor="1stPage">
+                    <div class="_tit_box">
+                        <h2 class="_tit">
+                            <img src="imgs/index/main_visual_txt.png" alt="Link Everything / Think Everyone">
+                        </h2>
+                        <p class="_txt">그립이 만드는 IoT 세상</p>
+                    </div>
+                    <div class="slide">
+                        <video id="_video02" class="_my_video" muted data-autoplay autoplay data-src="imgs/index/Star.mp4" webkit-playinline playinline poster="imgs/index/star.png">
+                            <source data-src="imgs/index/Star.mp4">
+                        </video>
+                    </div>
+                    <div class="slide">
+                        <video id="_video01" class="_my_video" muted data-autoplay autoplay data-src="imgs/index/grib.mp4" webkit-playinline playinline poster="imgs/index/grib.png">
+                            <source data-src="imgs/index/grib.mp4">
+                        </video>
+                    </div>
+                    <div class="_slide_count_wrap">
+                        <em class="_current_num">01</em> - <span>02</span>
+                    </div>
+                </article>
+                <article id="_section02" class="section" data-anchor="2ndPage">
+                    <div class="_tit_box">
+                        <h2 class="_tit">IoT Device</h2>
+                        <p class="_txt">그립이 만든 IoT Hub를 통해 다양한 디바이스들을 연결합니다.</p>
+                        <div class="_btn_more_wrap">
+                            <a href="iot_device/iot_hub_stand.html" class="_btn_more">MORE<span class="_go_arrow"></span></a>
+                        </div>
+                    </div>
+                </article>
+                <article id="_section03" class="section" data-anchor="3rdPage">
+                    <div class="_tit_box">
+                        <h2 class="_tit">Platform & Solution</h2>
+                        <p class="_txt">손 쉽게 IoT 환경 구축이 가능한 그립의 플랫폼을 만나보세요.</p>
+                        <div class="_btn_more_wrap">
+                            <a href="platform_solution/platform_g.html" class="_btn_more">MORE<span class="_go_arrow"></span></a>
+                        </div>
+                    </div>
+                </article>
+                <article id="_section04" class="section" data-anchor="4thPage">
+                    <div class="_tit_box">
+                        <h2 class="_tit">Service</h2>
+                        <p class="_txt">그립의 IoT 허브 기술과 플랫폼을 통해 다양한 서비스 제공이 가능합니다.</p>
+                        <div class="_btn_more_wrap">
+                            <a href="service/service.html" class="_btn_more">MORE<span class="_go_arrow"></span></a>
+                        </div>
+                    </div>
+                </article>
+                <article id="_section05" class="section" data-anchor="5thPage">
+                    <div class="_tit_box">
+                        <h2 class="_tit">함께 나아갑니다</h2>
+                        <p class="_txt">Home IoT 핵심 기술력을 바탕으로 SOHO, 스마트빌딩, 캠퍼스와 공장 등의<br>다양한 IoT 산업에 활용가능한 서비스를 구축하여 많은 사람들에게 편의, 안전,<br>절감 등의 가치를 제공하는 기업이 되고자 합니다.</p>
+                        <div class="_btn_more_wrap">
+                            <a href="about_grib/over_view.html" class="_btn_more">협업문의<span class="_go_arrow"></span></a>
+                        </div>
+                    </div>
+                </article>
+                <footer id="_footer" class="section fp-auto-height" data-anchor="lastPage">
+                    <div class="_footer_top_wrap">
+                        <div class="_footer_top">
+                            <ul class="_move_site _clearfix">
+                                <li class="_move_site_lst">
+                                    <a href="iot_device/iot_hub_stand.html">IoT Device</a>
+                                </li>
+                                <li class="_move_site_lst">
+                                    <a href="platform_solution/platform_g.html">Platform&Solution</a>
+                                </li>
+                                <li class="_move_site_lst">
+                                    <a href="service/service.html">Service</a>
+                                </li>
+                                <li class="_move_site_lst">
+                                    <a href="about_grib/over_view.html">About Grib</a>
+                                </li>
+                            </ul>
+                            <a href="http://www.grib.co.kr/" class="_btn_grib">
+                                Grib 홉페이지<span>GO</span>
+                            </a>
+                            <div class="_scroll_top_btn">
+                                <a href="#1stPage" title="TOP">
+                                    <img src="imgs/index/btn_top.png" alt="TOP" class="_rel">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_footer_bot_wrap">
+                        <div class="_footer_bot">
+                            <adress>서울특별시 서초구 효령로 242 서양빌딩 5층 (주)그립<span class="_number">TEL : 02-521-6542&nbsp;&nbsp;FAX : 02-521-6508</span></adress>
+                            <span class="_kbrain_icon_wrap">
+                                <img src="imgs/index/kbrain.png" alt="Kbrain img">
+                            </span>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script>
+        jQuery(function($) {
+            objectFitVideos();//objectFitVideos
+            //fullpage start
+            $('#fullpage').fullpage({
+                licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', 'lastPage'],
+                menu: '._content_menu'
+            });
+            //fullpage end
+            //1st page video count number function start
+            $("._my_video").on("ended", function() {
+                $('.fp-next').trigger('click');
+                countNum();
+            });
+            $('.fp-controlArrow').on('click', function() {
+                setTimeout(function() {
+                    countNum();
+                }, 200);
+            });
+            function countNum() {
+                var slideIndex = $('.slide.active').index();
+                $('._current_num').text("0" + (slideIndex + 1));
+            }
+            //1st page video count number function end
+            //scroll down btn event start
+            $('#_scroll_down_wrap').on('click',function(e){
+                e.preventDefault();
+                fullpage_api.moveSectionDown();
+            });
+            //scroll down btn event end
+        })
+    </script>
+</body>
+</html>

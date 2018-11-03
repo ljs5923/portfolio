@@ -167,12 +167,20 @@ html{-webkit-overflow-scrolling:touch;-webkit-text-size-adjust:none}
 #_footer ._footer_wrap._portfolio{background-color:rgba(255, 255, 255, 0.3)}
 /* sos */
 #_container._sos ._spot_wrap ._spot{background-image:url(../imgs/sos/sos_spot.png)}
-#_container._sos ._port_content ._dec_box:before{content:'';position:absolute;left:1%;width:2px;height:100%;background-color:#185367}
+#_container._sos ._port_content ._dec_box:before{background-color:#185367}
 #_container._sos ._port_content._sub ._sub_tab a{width:16.6%;background-color:#185367}
 #_container._sos ._port_content._sub ._sub_tab a:hover{background-color:#fff;color:#185367}
 #_container._sos ._port_content._sub ._sub_tab a.active{background-color:#fff;color:#185367}
 #_footer._sos{background-image:url(../imgs/sos/port_sos_bg.png)}
 #_container._sos ._spot_wrap ._spot ._btn_link:hover{background-color:#185367;border-color:#185367}
+/* grib */
+#_container._grib ._spot_wrap ._spot{background-image:url(../imgs/grib/grib_spot.jpg);background-size: cover;background-position: 0 50%}
+#_container._grib ._port_content ._dec_box:before{background-color:#777}
+#_container._grib ._port_content._sub ._sub_tab a{width:25%;background-color:#777}
+#_container._grib ._port_content._sub ._sub_tab a:hover{background-color:#fff;color:#777}
+#_container._grib ._port_content._sub ._sub_tab a.active{background-color:#fff;color:#777}
+#_footer._grib{background-image:url(../imgs/grib/port_grib_bg.png)}
+#_container._grib ._spot_wrap ._spot ._btn_link:hover{background-color:#777;border-color:#777}
 /*세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용)*/
 @media only screen and (max-width:575px){
     #_container ._content ._tit{font-size:30px}
