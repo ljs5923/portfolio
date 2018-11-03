@@ -1,417 +1,262 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
-    <title>이진수의 포토폴리오</title>
-    <meta name="description" content="Lee jin su portfolio site">
+    <meta name="description" content="Grib portfolio site">
     <meta name="keywords" content="web publisher portfolio, 웹 퍼블리셔 포트폴리오, 반응형웹, 접근성, 홈페이지">
     <meta name="author" content="Lee Jin Su">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grip</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="font/nanumsquare.css">
+    <link rel="stylesheet" href="css/fullpage/fullpage.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <script src="js/jquery-latest.min.js"></script>
-    <script src="js/typist/jquery.typist.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
-    <!--IE10 이하 브라우저-->
-    <!--[if IE]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-      <style>
-        #wrap{overflow-x:hidden;}
-      </style>
-    <![endif]-->
+    <script src="js/common.js"></script>
+    <script src="js/fullpage/fullpage.min.js"></script>
+    <script src="js/object-fit-videos.min.js"></script>
 </head>
 
 <body>
-    <div id="wrap">
-        <header id="_header">
-            <nav id="_nav" class="_clearfix">
-                <div class="_desk_menu_wrap">
-                    <div class="_gnb_button animated infinite pulse">
-                        <button type="button" class="_btn _show_btn"><i class="_icon _show_icon">메뉴 활성화</i></button>
-                        <button type="button" class="_btn _hidden_btn"><i class="_icon _hide_icon">메뉴 비활성화</i></button>
-                    </div>
-                    <div class="_gnb_wrap">
-                        <ul class="_gnbs">
-                            <li class="_gnb _lst01 _scrollTop">
-                                <span class="_txt">HOME</span>
-                            </li>
-                            <li class="_gnb _lst02 _scrollTop">
-                                <span class="_txt">ABOUT ME</span>
-                            </li>
-                            <li class="_gnb _lst03 _scrollTop">
-                                <span class="_txt">SKILLS</span>
-                            </li>
-                            <li class="_gnb _lst04 _scrollTop">
-                                <span class="_txt">PORTFOLIO</span>
-                            </li>
-                            <li class="_gnb _lst05 _scrollTop">
-                                <span class="_txt">AMBITION</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="_mobile_menu_wrap">
-                    <div class="_gnb_button animated infinite pulse">
-                        <button type="button" class="_btn _mobile_btn"><i class="_icon _mobile_icon">모바일 메뉴 활성화</i></button>
-                    </div>
-                    <div class="_gnb_wrap">
-                        <ul class="_gnbs">
-                            <li class="_gnb _lst01 _scrollTop">
-                                <span class="_txt">HOME</span>
-                            </li>
-                            <li class="_gnb _lst02 _scrollTop">
-                                <span class="_txt">ABOUT ME</span>
-                            </li>
-                            <li class="_gnb _lst03 _scrollTop">
-                                <span class="_txt">SKILLS</span>
-                            </li>
-                            <li class="_gnb _lst04 _scrollTop">
-                                <span class="_txt">PORTFOLIO</span>
-                            </li>
-                            <li class="_gnb _lst05 _scrollTop">
-                                <span class="_txt">AMBITION</span>
-                            </li>
-                            <li class="_gnb _lst06 _scrollTop">
-                                <span class="_txt">Close</span>
-                            </li>
-                        </ul>
-                    </div>
+    <div id="_wrap">
+        <div id="_skip_menu_wrap">
+            <a href="#_container">본문 바로가기</a>
+            <a href="#_gnb">메뉴 바로가기</a>
+        </div>
+        <header id="_header" class="_main">
+            <h1 class="_logo">
+                <a href="index.html">
+                    <img src="imgs/index/logo.png" alt="grib" class="_rel">
+                </a>
+            </h1>
+            <div class="_gnb_btn_wrap">
+                <button class="_gnb_btn">
+                    <span class="_gnb_line _top"></span>
+                    <span class="_gnb_line _mid"></span>
+                    <span class="_gnb_line _bot"></span>
+                </button>
+            </div>
+            <nav class="_gnb_wrap">
+                <div class="_gnb_box">
+                    <ul class="_gnb">
+                        <li class="_gnb_lst">
+                            <a href="index.html" class="_lst_tit">Home</a>
+                        </li>
+                        <li class="_gnb_lst">
+                            <p class="_lst_tit">IoT Device</p>
+                            <ul class="_gnb_sub">
+                                <li>
+                                    <a href="iot_device/iot_hub_stand.html">- IoT Hub (Stand-alone type)</a>
+                                </li>
+                                <li>
+                                    <a href="iot_device/iot_hub_dongle.html">- IoT Hub (Dongle type)</a>
+                                </li>
+                                <li>
+                                    <a href="iot_device/iot_gas_lock.html">- IoT Gas Lock</a>
+                                </li>
+                                <li>
+                                    <a href="iot_device/z_wave_repeater.html">- Z-Wave-Repeater</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_gnb_lst">
+                            <p class="_lst_tit">Platform & Solution</p>
+                            <ul class="_gnb_sub">
+                                <li>
+                                    <a href="platform_solution/platform_g.html">- Platform@G</a>
+                                </li>
+                                <li>
+                                    <a href="platform_solution/cloud_streaming.html">- Cloud Streaming</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_gnb_lst">
+                            <p class="_lst_tit">Service</p>
+                            <ul class="_gnb_sub">
+                                <li>
+                                    <a href="service/service.html">- Service</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_gnb_lst">
+                            <p class="_lst_tit">About Grib</p>
+                            <ul class="_gnb_sub">
+                                <li>
+                                    <a href="about_grib/over_view.html">- 회사개요</a>
+                                </li>
+                                <li>
+                                    <a href="about_grib/news.html">- 그립소식</a>
+                                </li>
+                                <li>
+                                    <a href="about_grib/location.html">- 위치안내</a>
+                                </li>
+                                <li>
+                                    <a href="about_grib/download.html">- 다운로드</a>
+                                </li>
+                                <li>
+                                    <a href="about_grib/board_write.html">- 협업문의</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>
+        <div class="_content_menu_wrap">
+            <ul class="_content_menu">
+                <li class="_content_menu_lst active" data-menuanchor="1stPage">
+                    <a href="#1stPage">G<span>rib</span></a>
+                </li>
+                <li class="_content_menu_lst" data-menuanchor="2ndPage">
+                    <a href="#2ndPage">I<span>oT Device</span></a>
+                </li>
+                <li class="_content_menu_lst" data-menuanchor="3rdPage">
+                    <a href="#3rdPage">P<span>latform&Solution</span></a>
+                </li>
+                <li class="_content_menu_lst" data-menuanchor="4thPage">
+                    <a href="#4thPage">S<span>ervice</span></a>
+                </li>
+                <li class="_content_menu_lst" data-menuanchor="5thPage">
+                    <a href="#5thPage">A<span>bout Grib</span></a>
+                </li>
+            </ul>
+        </div>
+        <div id="_scroll_down_wrap" class="_scroll_down animated infinite bounce">
+            <a href="#" class="_scroll_dwon_btn">
+                <img src="imgs/index/ico_scroll.png" class="_rel" alt="scrolldown">
+            </a>
+        </div>
         <section id="_container">
-            <h1 class="_tit _hide_txt">이진수의 포토폴리오</h1>
-            <article id="_content_main" class="_content _main">
-                <h2 class="_hide_txt">Main</h2>
-                <div class="_content_container">
-                    <div class="_content_wrap">
-                        <div class="_tit_box">
-                            <div class="_tit"></div>
-                            <p class="_sub_tit">웹 퍼블리셔<strong class="_point _name">이진수</strong>포트폴리오</p>
-                        </div>
-                        <div class="_dec_box">
-                            <p class="_txt animated fadeInLeft">무엇이든 포기하지 않고 뛰어난 습득력으로 빠르게 성장하는</p>
-                            <p class="_txt animated fadeInLeft delay-1s">힘들어도 즐길 줄 알고 상대방과의 의사소통을 중요시 하는</p>
-                            <p class="_txt _point animated fadeIn delay-2s">사람</p>
+            <div id="fullpage">
+                <article id="_section01" class="section" data-anchor="1stPage">
+                    <div class="_tit_box">
+                        <h2 class="_tit">
+                            <img src="imgs/index/main_visual_txt.png" alt="Link Everything / Think Everyone">
+                        </h2>
+                        <p class="_txt">그립이 만드는 IoT 세상</p>
+                    </div>
+                    <div class="slide">
+                        <video id="_video02" class="_my_video" muted data-autoplay autoplay data-src="imgs/index/Star.mp4" webkit-playinline playinline poster="imgs/index/star.png">
+                            <source data-src="imgs/index/Star.mp4">
+                        </video>
+                    </div>
+                    <div class="slide">
+                        <video id="_video01" class="_my_video" muted data-autoplay autoplay data-src="imgs/index/grib.mp4" webkit-playinline playinline poster="imgs/index/grib.png">
+                            <source data-src="imgs/index/grib.mp4">
+                        </video>
+                    </div>
+                    <div class="_slide_count_wrap">
+                        <em class="_current_num">01</em> - <span>02</span>
+                    </div>
+                </article>
+                <article id="_section02" class="section" data-anchor="2ndPage">
+                    <div class="_tit_box">
+                        <h2 class="_tit">IoT Device</h2>
+                        <p class="_txt">그립이 만든 IoT Hub를 통해 다양한 디바이스들을 연결합니다.</p>
+                        <div class="_btn_more_wrap">
+                            <a href="iot_device/iot_hub_stand.html" class="_btn_more">MORE<span class="_go_arrow"></span></a>
                         </div>
                     </div>
-                </div>
-            </article>
-            <article id="_content_intro" class="_content _intro">
-                <h2 class="_tit"><button type="button" class="_btn _btn_tit">#About Me</button></h2>
-                <div class="_content_container">
-                    <div class="_content_intro">
-                        <button class="_btn _btn_intro">
-                            <img src="imgs/main/intro_img.jpg" alt="이진수이미지">
-                            <span class="_dec_box">
-                                <span class="_txt"><strong>1992.09.24</strong></span>
-                                <span class="_txt"><strong>이진수 (LEE JIN SU)</strong></span>
-                                <span class="_txt">강릉원주대학교 원주캠퍼스</span>
-                                <span class="_txt">정보기술공학과 (18.02 졸업)</span>
-                            </span>
-                        </button>
+                </article>
+                <article id="_section03" class="section" data-anchor="3rdPage">
+                    <div class="_tit_box">
+                        <h2 class="_tit">Platform & Solution</h2>
+                        <p class="_txt">손 쉽게 IoT 환경 구축이 가능한 그립의 플랫폼을 만나보세요.</p>
+                        <div class="_btn_more_wrap">
+                            <a href="platform_solution/platform_g.html" class="_btn_more">MORE<span class="_go_arrow"></span></a>
+                        </div>
                     </div>
-                    <div class="_content_wrap">
-                        <div class="_content_lsts">
-                            <ul class="_lsts">
-                                <li class="_lst _lst1 _active"><a data-slide-index="0">#끈기</a></li>
-                                <li class="_lst _lst2"><a data-slide-index="1">#적응</a></li>
-                                <li class="_lst _lst3"><a data-slide-index="2">#열정</a></li>
-                                <li class="_lst _lst4"><a data-slide-index="3">#소통</a></li>
+                </article>
+                <article id="_section04" class="section" data-anchor="4thPage">
+                    <div class="_tit_box">
+                        <h2 class="_tit">Service</h2>
+                        <p class="_txt">그립의 IoT 허브 기술과 플랫폼을 통해 다양한 서비스 제공이 가능합니다.</p>
+                        <div class="_btn_more_wrap">
+                            <a href="service/service.html" class="_btn_more">MORE<span class="_go_arrow"></span></a>
+                        </div>
+                    </div>
+                </article>
+                <article id="_section05" class="section" data-anchor="5thPage">
+                    <div class="_tit_box">
+                        <h2 class="_tit">함께 나아갑니다</h2>
+                        <p class="_txt">Home IoT 핵심 기술력을 바탕으로 SOHO, 스마트빌딩, 캠퍼스와 공장 등의<br>다양한 IoT 산업에 활용가능한 서비스를 구축하여 많은 사람들에게 편의, 안전,<br>절감 등의 가치를 제공하는 기업이 되고자 합니다.</p>
+                        <div class="_btn_more_wrap">
+                            <a href="about_grib/over_view.html" class="_btn_more">협업문의<span class="_go_arrow"></span></a>
+                        </div>
+                    </div>
+                </article>
+                <footer id="_footer" class="section fp-auto-height" data-anchor="lastPage">
+                    <div class="_footer_top_wrap">
+                        <div class="_footer_top">
+                            <ul class="_move_site _clearfix">
+                                <li class="_move_site_lst">
+                                    <a href="iot_device/iot_hub_stand.html">IoT Device</a>
+                                </li>
+                                <li class="_move_site_lst">
+                                    <a href="platform_solution/platform_g.html">Platform&Solution</a>
+                                </li>
+                                <li class="_move_site_lst">
+                                    <a href="service/service.html">Service</a>
+                                </li>
+                                <li class="_move_site_lst">
+                                    <a href="about_grib/over_view.html">About Grib</a>
+                                </li>
                             </ul>
-                        </div>
-                        <div class="_content_con">
-                            <div class="_content_con_lsts">
-                                <ul class="_lsts">
-                                    <li class="_lst lst1">
-                                        <p class="_con_txt">웹 페이지를 제작하다 보면 잘 해결되지 않고 막히는 일이 종종 일어납니다.<br>하지만 저는 포기하지 않고 끈기 있게 문제를 해결하려고 노력하는 사람입니다.</p>
-                                    </li>
-                                    <li class="_lst lst2">
-                                        <p class="_con_txt">어느 낯선 환경 속에서도 환경을 잘 파악하고 행동할 수 있습니다.<br>이러한 파악 능력과 빠른 행동으로 적응하며 지낼 수 있는 사람입니다.</p>
-                                    </li>
-                                    <li class="_lst lst3">
-                                        <p class="_con_txt">열정을 가지고 일을 한다면 더욱더 일의 능률은 높아질 것입니다.<br>저는 일의 능률을 높일 수 있는 열정을 가지고 있습니다.</p>
-                                    </li>
-                                    <li class="_lst lst4">
-                                        <p class="_con_txt">소통이야말로 어디서든 꼭 필요한 단어입니다.<br>소통이 없다면 무슨 일이든 해결할 수 없다고 생각합니다.<br>이렇게 중요한 소통을 항상 하려고 하는 사람입니다.</p>
-                                    </li>
-                                </ul>
+                            <a href="http://www.grib.co.kr/" class="_btn_grib">
+                                Grib 홉페이지<span>GO</span>
+                            </a>
+                            <div class="_scroll_top_btn">
+                                <a href="#1stPage" title="TOP">
+                                    <img src="imgs/index/btn_top.png" alt="TOP" class="_rel">
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </article>
-            <article id="_content_skills" class="_content _skills">
-                <h2 class="_tit">#Skills</h2>
-                <div class="_content_wrap">
-                    <ul class="_content_lsts _clearfix">
-                        <li class="_content_lst _lst01">
-                            <span class="_icon _icon_html5">HTML5아이콘이미지</span>
-                            <p class="_txt">HTML5</p>
-                        </li>
-                        <li class="_content_lst _lst02">
-                            <span class="_icon _icon_css3">CSS3아이콘이미지</span>
-                            <p class="_txt">CSS3</p>
-                        </li>
-                        <li class="_content_lst _lst03">
-                            <span class="_icon _icon_js">JavaScript아이콘이미지</span>
-                            <p class="_txt">JavaScript</p>
-                        </li>
-                        <li class="_content_lst _lst04">
-                            <span class="_icon _icon_jQuery">jQuery아이콘이미지</span>
-                            <p class="_txt">jQuery</p>
-                        </li>
-                        <li class="_content_lst _lst05">
-                            <span class="_icon _icon_php">PHP아이콘이미지</span>
-                            <p class="_txt">PHP</p>
-                        </li>
-                    </ul>
-                </div>
-            </article>
-            <article id="_content_portfolio" class="_content _portfolio">
-                <h2 class="_tit">#Portfolio</h2>
-                <div class="_content_wrap">
-                    <ul class="_content_lsts">
-                        <li class="_content_lst _lst01">
-                            <a href="portfolio/ko.html" class="_btn _btn_link">
-                                <figure class="_img_box">
-                                    <img src="imgs/main/port01.png" alt="포토폴리오01" class="_rel">
-                                    <div class="_go_box">
-                                        <p class="_go_txt">상세보기</p>
-                                    </div>
-                                </figure>
-                                <div class="_dec_box">
-                                    <strong class="_dec_tit">고려개발(주)</strong>
-                                    <p class="_dec_txt">HTML5 / CSS3 / JavaScript / jQuery / publishing(100%)</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="_content_lst _lst02">
-                            <a href="portfolio/sos.html" class="_btn _btn_link">
-                                <figure class="_img_box">
-                                    <img src="imgs/main/port02.png" alt="포토폴리오02" class="_rel">
-                                    <div class="_go_box">
-                                        <p class="_go_txt">상세보기</p>
-                                    </div>
-                                </figure>
-                                <div class="_dec_box">
-                                    <strong class="_dec_tit">SOSFESTIVAL</strong>
-                                    <p class="_dec_txt">HTML5 / CSS3 / JavaScript / jQuery / publishing(100%)</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="_content_lst _lst03">
-                            <a href="portfolio/grib.html" class="_btn _btn_link">
-                                <figure class="_img_box">
-                                    <img src="imgs/main/port03.png" alt="포토폴리오03" class="_rel">
-                                    <div class="_go_box">
-                                        <p class="_go_txt">상세보기</p>
-                                    </div>
-                                </figure>
-                                <div class="_dec_box">
-                                    <strong class="_dec_tit">Grib-IoT</strong>
-                                    <p class="_dec_txt">HTML5 / CSS3 / JavaScript / jQuery / publishing(100%)</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </article>
-            <article id="_content_ambition" class="_content _ambition">
-                <h2 class="_tit">#Ambition</h2>
-                <div class="_content_container">
-                    <div class="_content_wrap">
-                        <h2 class="_sub_tit">웹에 다가가기 위한 발걸음</h2>
-                        <p class="_txt"><strong>4학년 1학기</strong>를 마친 후 휴학이라는 결정을 하게 되었습니다. 웹에 관한 강의를 1,2학년 때 재미있게 배운 기억을 떠올리고 웹이란 무엇인지 더 알고 싶고 배우고 싶은 마음에 결정하게 되었습니다. 졸업을 앞둔 상황에서 정말 어려운 결정이었지만 저의 꿈에 대한 열정은 이 결정이 확신하였습니다. 늦었지만 열심히 노력하고 학습한다면 해낼 수 있다는 생각을 가지고 열심히 준비하였습니다. 꿈을 이루기 위한 이러한 한 단계씩의 과정이 저에게는 너무나도 행복하고 즐거웠습니다. 코딩을 통해 구현되는 화면의 모습을 보면 항상 짜릿하였고 해결되지 않는 부분이 해결된다면 너무나도 즐거운 일이었습니다. 이제는 이렇게 행복하고 즐거운 일을 신입 웹 퍼블리셔로서 해내고 싶습니다.<br> <strong>웹은</strong> 무궁무진한 세계인 것 같습니다. 파도 파도 끝이 없고 항상 새로운 변화를 만들어내는 아주 신비롭고도 새로운 세계인 것 같습니다. 저도 이러한 웹의 세계처럼 파도 파도 끝이 없고 항상 새로운 변화를 만들어내며 웹과 같은 직원이 되고 싶습니다. 이러한 직원이 되기 위해 저는 항상 노력할 것이고 힘든 일이 있다면 힘들기보다는 즐기려는 자세를 가지고 회사의 꼭 필요한 웹 퍼블리셔가 되겠습니다.</p>
+                    <div class="_footer_bot_wrap">
+                        <div class="_footer_bot">
+                            <adress>서울특별시 서초구 효령로 242 서양빌딩 5층 (주)그립<span class="_number">TEL : 02-521-6542  FAX : 02-521-6508</span></adress>
+                            <span class="_kbrain_icon_wrap">
+                                <img src="imgs/index/kbrain.png" alt="Kbrain img">
+                            </span>
+                        </div>
                     </div>
-                </div>
-            </article>
-        </section>
-        <footer id="_footer">
-            <div class="_footer_wrap _clearfix">
-                <div class="_contact_wrap">
-                    <h2 class="_tit">CONTACT ME</h2>
-                    <ul class="_contact_lsts _clearfix">
-                        <li class="_contact_lst">WEB PUBLISHER</li>
-                        <li class="_contact_lst">LEE JIN SU</li>
-                        <li class="_contact_lst">010-3380-8297</li>
-                        <li class="_contact_lst">ljs5923@google.com</li>
-                    </ul>
-                </div>
-                <div class="_contact_icon_wrap">
-                    <figure class="_img_box">
-                        <img src="imgs/main/footer_icon.png" alt="footer icon logo" class="_rel">
-                    </figure>
-                    <ul class="_contact_icon _clearfix">
-                        <li class="_contact_icon_lst"><a href="https://plus.google.com/u/0/114845030938189679206" target="_blank" class="_icon _gg_icon"></a></li>
-                        <li class="_contact_icon_lst">
-                            <a href="https://www.instagram.com/jinnnnsu/" target="_blank" class="_icon _insta_icon"></a>
-                        </li>
-                        <li class="_contact_icon_lst">
-                            <a href="https://www.facebook.com/jinnnnsu" target="_blank" class="_icon _face_icon"></a>
-                        </li>
-                        <li class="_contact_icon_lst">
-                            <a href="https://github.com/ljs5923" target="_blank" class="_icon _git_icon"></a>
-                        </li>
-                        <li class="_contact_icon_lst _w3c">
-                            <p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="//jigsaw.w3.org/css-validator/images/vcss" alt="올바른 CSS입니다!" /></a></p>
-                        </li>
-                        <li class="_contact_icon_lst _w3c">
-                            <p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="//jigsaw.w3.org/css-validator/images/vcss-blue" alt="올바른 CSS입니다!" /></a></p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="_footer_nav_wrap">
-                    <h2 class="_tit">Navigator</h2>
-                    <ul class="_footer_nav _clearfix">
-                        <li class="_footer_nav_lst _scrollTop">HOME</li>
-                        <li class="_footer_nav_lst _scrollTop">ABOUT ME</li>
-                        <li class="_footer_nav_lst _scrollTop">SKILLS</li>
-                        <li class="_footer_nav_lst _scrollTop">PORTFOLIO</li>
-                        <li class="_footer_nav_lst _scrollTop">AMBITION</li>
-                    </ul>
-                </div>
+                </footer>
             </div>
-        </footer>
+        </section>
     </div>
     <script>
         jQuery(function($) {
-            //main height 100%
-            $(window).on('load resize', function() {
-                var winH = $(window).height();
-                $('._content._main').css('height', winH);
+            objectFitVideos();//objectFitVideos
+            //fullpage start
+            $('#fullpage').fullpage({
+                licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', 'lastPage'],
+                menu: '._content_menu'
             });
-            //typist
-            var $main = $('._main');
-            var $titBox01 = $main.find('._tit_box');
-            var $tit = $titBox01.find('._tit');
-            $tit.typist({
-                speed: 5,
-                text: 'WEB PUBLISHER'
-            }).typistStop();
-            //            menu
-            var $header = $('#_header');
-            var $btnWrap = $header.find('._gnb_button');
-            var $btn = $btnWrap.find('._btn');
-            var $deskTopMenu = $header.find('._desk_menu_wrap');
-            var $deskSTbtn = $deskTopMenu.find('._gnb');
-            var $mobileMenu = $header.find('._mobile_menu_wrap');
-            var $mobilSTbtn = $mobileMenu.find('._gnb');
-            var $footer = $('#_footer');
-            var $footerNav = $footer.find('._footer_nav');
-            var $footerNavBtn = $footerNav.find('._footer_nav_lst');
-
-            function menuMoveEvent(menuIndex) {
-                $('html, body').stop().animate({
-                    scrollTop: menuIndex
-                }, 1000);
+            //fullpage end
+            //1st page video count number function start
+            $("._my_video").on("ended", function() {
+                $('.fp-next').trigger('click');
+                countNum();
+            });
+            $('.fp-controlArrow').on('click', function() {
+                setTimeout(function() {
+                    countNum();
+                }, 200);
+            });
+            function countNum() {
+                var slideIndex = $('.slide.active').index();
+                $('._current_num').text("0" + (slideIndex + 1));
             }
-            $deskSTbtn.on('click', function() {
-                var scrollPlus = 0;
-                var index = $(this).index();
-                for (i = 0; i < index; i++) {
-                    scrollPlus += $('article').eq(i).outerHeight(true);
-                }
-                menuMoveEvent(scrollPlus);
+            //1st page video count number function end
+            //scroll down btn event start
+            $('#_scroll_down_wrap').on('click',function(e){
+                e.preventDefault();
+                fullpage_api.moveSectionDown();
             });
-            $mobilSTbtn.on('click', function() {
-                var scrollPlus = 0;
-                var index = $(this).index();
-                for (i = 0; i < index; i++) {
-                    scrollPlus += $('article').eq(i).outerHeight(true);
-                }
-                if (index < 5) {
-                    $mobileMenu.find('._gnb_wrap').slideUp(function() {
-                        $mobileMenu.find('._mobile_btn').fadeIn();
-                    });
-                    menuMoveEvent(scrollPlus);
-                } else if (index = 5) {
-                    $mobileMenu.find('._gnb_wrap').slideUp(function() {
-                        $header.find('._mobile_btn').fadeIn()
-                    });
-                }
-            })
-            $footerNavBtn.on('click', function() {
-                var scrollPlus = 0;
-                var index = $(this).index();
-                for (i = 0; i < index; i++) {
-                    scrollPlus += $('article').eq(i).outerHeight(true);
-                }
-                menuMoveEvent(scrollPlus);
-            })
-            $btn.off().on('click', function() {
-                if ($(this).hasClass('_show_btn')) {
-                    $(this).fadeOut(function() {
-                        $header.find('._hidden_btn').fadeIn();
-                    });
-                    $header.stop().animate({
-                        right: 0
-                    }, 500)
-                } else if ($(this).hasClass('_hidden_btn')) {
-                    $(this).fadeOut(function() {
-                        $header.find('._show_btn').fadeIn();
-                    });
-                    $header.stop().animate({
-                        right: -180
-                    }, 500)
-                } else if ($(this).hasClass('_mobile_btn')) {
-                    $(this).fadeOut(function() {
-                        $mobileMenu.find('._gnb_wrap').slideDown();
-                    })
-                }
-            })
-            //intro
-            var $intro = $('._intro');
-            var $introConIntro = $intro.find('._content_intro');
-            var $introBtn = $intro.find('._btn');
-            var $conWrap02 = $intro.find('._content_wrap');
-            var $conTentLst = $conWrap02.find('._content_lsts');
-            $introBtn.on('click', function() {
-                if ($(this).hasClass('_btn_intro')) {
-                    $introConIntro.fadeOut(function() {
-                        $conWrap02.fadeIn();
-                    });
-                } else if ($(this).hasClass('_btn_tit')) {
-                    $conWrap02.fadeOut(function() {
-                        $introConIntro.fadeIn();
-                    });
-                }
-            });
-            $('._content_con_lsts ._lsts').bxSlider({
-                mode: 'fade',
-                controls: false,
-                pagerCustom: '._lsts',
-                touchEnabled: false,
-                onSlideBefore: function($slideElement, oldIndex, newIndex) {
-                    $conTentLst.find('._lst').eq(newIndex).addClass('_active').siblings().removeClass('_active');
-                }
-            });
-            //            portfolio
-            var $portfolio = $('._portfolio');
-            var $noConBtn = $portfolio.find('._btn_no_link');
-            $noConBtn.on('click', function() {
-                alert('추가 예정 중입니다. 기다려주세요!');
-            })
-            //skills
-            var $skills = $('._skills');
-            var $skillsLsts = $skills.find('._content_lsts');
-            var $skillsLst = $skillsLsts.find('._content_lst');
-            $(window).on('scroll', function() {
-                var winST = $(window).scrollTop();
-                var introOT = $intro.offset().top;
-                var skillsOT = $skills.offset().top;
-                if ((introOT + introOT / 2) < winST) {
-                    $skillsLst.addClass('animated fadeInUp');
-                } else if (skillsOT > winST) {
-                    $skillsLst.removeClass('animated fadeInUp');
-                }
-            });
+            //scroll down btn event end
         })
-
     </script>
 </body>
-
 </html>
