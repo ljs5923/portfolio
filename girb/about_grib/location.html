@@ -61,7 +61,7 @@
                 <div class="_gnb_box">
                     <ul class="_gnb">
                         <li class="_gnb_lst">
-                            <a href="../../index.html" class="_lst_tit">Home</a>
+                            <a href="../index.html" class="_lst_tit">Home</a>
                         </li>
                         <li class="_gnb_lst">
                             <p class="_lst_tit">IoT Device</p>
@@ -203,7 +203,7 @@
             </div>
             <div class="_footer_bot_wrap">
                 <div class="_footer_bot">
-                    <adress>서울특별시 서초구 효령로 242 서양빌딩 5층 (주)그립<span class="_number">TEL : 02-521-6542&nbsp;&nbsp;FAX : 02-521-6508</span></adress>
+                    <adress>서울특별시 서초구 효령로 242 서양빌딩 5층 (주)그립<span class="_number"><a href="tel:02-521-6542">TEL : 02-521-6542</a>&nbsp;&nbsp;<a href="tel:02-521-6503">FAX : 02-521-6508</a></span></adress>
                     <span class="_kbrain_icon_wrap">
                         <img src="../imgs/index/kbrain.png" alt="Kbrain img">
                     </span>
@@ -215,7 +215,7 @@
         jQuery(function() {
             var mapDiv1 = document.getElementById('_map1');
             var mapDiv2 = document.getElementById('_map2');
-            
+
             var map1 = new naver.maps.Map(mapDiv1, {
                 center: new naver.maps.LatLng(37.483866, 127.010521),
                 zoom: 11,
@@ -234,7 +234,7 @@
                     position: naver.maps.Position.TOP_RIGHT
                 }
             });
-            
+
             var marker1 = new naver.maps.Marker({
                 position: new naver.maps.LatLng(37.483866, 127.010521),
                 map: map1
@@ -243,7 +243,7 @@
                 position: new naver.maps.LatLng(37.366207, 127.106404),
                 map: map2
             });
-            
+
             map1.setOptions({ //지도 인터랙션 끄기
                 draggable: false,
                 pinchZoom: false,
@@ -263,7 +263,6 @@
                 disableTwoFingerTapZoom: true
             });
         }); //jQuery end
-
     </script>
 </body>
 

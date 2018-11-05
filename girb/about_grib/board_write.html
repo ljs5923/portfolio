@@ -62,7 +62,7 @@
                 <div class="_gnb_box">
                     <ul class="_gnb">
                         <li class="_gnb_lst">
-                            <a href="../../index.html" class="_lst_tit">Home</a>
+                            <a href="../index.html" class="_lst_tit">Home</a>
                         </li>
                         <li class="_gnb_lst">
                             <p class="_lst_tit">IoT Device</p>
@@ -264,7 +264,7 @@
             </div>
             <div class="_footer_bot_wrap">
                 <div class="_footer_bot">
-                    <adress>서울특별시 서초구 효령로 242 서양빌딩 5층 (주)그립<span class="_number">TEL : 02-521-6542&nbsp;&nbsp;FAX : 02-521-6508</span></adress>
+                    <adress>서울특별시 서초구 효령로 242 서양빌딩 5층 (주)그립<span class="_number"><a href="tel:02-521-6542">TEL : 02-521-6542</a>&nbsp;&nbsp;<a href="tel:02-521-6503">FAX : 02-521-6508</a></span></adress>
                     <span class="_kbrain_icon_wrap">
                         <img src="../imgs/index/kbrain.png" alt="Kbrain img">
                     </span>
@@ -302,14 +302,13 @@
                     alert("이메일을 입력하세요");
                 } else if ($('#company').val() == '') {
                     alert("회사를 입력하세요");
-                } else if ($checkBox.hasClass('_on')===false) {
+                } else if ($checkBox.hasClass('_on') === false) {
                     alert("개인보호정책에 동의하여 주세요");
                 } else {
                     alert('제출이 완료되었습니다.')
                 }
             });
         })
-
     </script>
 </body>
 

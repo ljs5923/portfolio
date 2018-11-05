@@ -11,6 +11,7 @@ input,button,label{margin:0;padding:0;border:none;background:none;cursor:pointer
 legend,label{height:0;line-height:0;font-size:0;overflow:hidden}
 img{display:block;border:0}
 em{font-style:normal}
+adress{font-style:normal;font-weight:normal}
 /* common */
 img{max-width:100%}
 ._clearfix:after{content:'';display:block;clear:both}
@@ -121,6 +122,7 @@ img{max-width:100%}
 #_footer ._footer_bot_wrap ._footer_bot{position:relative;width:922px;min-height:104px;margin:0 auto;padding:46px 0 0 178px;background-image:url(../imgs/index/footer_logo.png);background-repeat:no-repeat;background-position:60px 50%}
 #_footer ._footer_bot_wrap ._footer_bot adress{line-height:30px;font-size:16px;color:rgba(255,255,255,0.5)}
 #_footer ._footer_bot_wrap ._footer_bot adress ._number{padding-left:40px}
+#_footer ._footer_bot_wrap ._footer_bot adress ._number a{display:inline-block;color:rgba(255,255,255,0.5);cursor:default}
 #_footer ._footer_bot_wrap ._footer_bot ._kbrain_icon_wrap{position:absolute;top:37px;right:0}
 /* sub_page */
 #_container ._content_wrap{position:relative;overflow:hidden;height:100%;background-position:50% 0;background-size:cover}
@@ -437,6 +439,7 @@ img{max-width:100%}
     #_container ._content_wrap._content06 ._content{padding:0}
     #_container ._content_wrap ._patent_lsts_wrap ._patent_lst dl dt{font-size:20px;margin:10px}
     #_container ._content_wrap ._patent_lsts_wrap ._patent_lst dl dd{font-size:14px}
+    #_footer ._footer_bot_wrap ._footer_bot adress{display:block;padding:75px 0 20px 0;line-height:36px;text-align:center;font-size:11px;word-break: normal}
 /*    platform_solution    */
     #_container._platform_g ._content_wrap._content02 ._content ._plat_lsts{padding-left:18px}
     #_container._platform_g ._content_wrap._content02 ._content ._plat_lst ._plat_lst_txt_box strong{font-size:22px}
@@ -552,6 +555,7 @@ img{max-width:100%}
     #_footer ._footer_top_wrap ._footer_top ._scroll_top_btn{top:-70px;width:50px;height:50px}
     #_footer ._footer_bot_wrap ._footer_bot{padding-left:120px;background-position:30px 50%}
     #_footer ._footer_bot_wrap ._footer_bot adress{font-size:14px}
+    #_footer ._footer_bot_wrap ._footer_bot adress ._number a{cursor:pointer}
     /*    iot_device    */
     #_container ._content_wrap ._content ._tit{margin-bottom:50px;font-size:35px}
     #_container ._content_wrap ._content ._tit span{font-size:22px}
@@ -681,7 +685,6 @@ img{max-width:100%}
     #_footer ._footer_top_wrap ._footer_top ._btn_grib{position:relative;top:0;right:0;width:100px;height:40px;margin:0 auto;line-height:40px;font-size:12px}
     #_footer ._footer_top_wrap ._footer_top ._btn_grib span{width:50px;height:40px;top:0;line-height:40px;font-size:12px}
     #_footer ._footer_bot_wrap ._footer_bot{padding:0;background-position:10px 11px}
-    #_footer ._footer_bot_wrap ._footer_bot adress{display:block;padding:75px 0 20px 0;text-align:center;font-size:12px}
     #_footer ._footer_bot_wrap ._footer_bot ._kbrain_icon_wrap{top:10px;right:10px}
 /*    iot_device    */
     #_container ._content_wrap._content01 ._content{padding:0 50px}
