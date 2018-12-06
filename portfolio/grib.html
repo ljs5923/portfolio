@@ -13,16 +13,23 @@
     <link rel="stylesheet" href="../font/nanumsquare.css">
     <link rel="stylesheet" href="../css/animate.min.css">
     <script src="../js/jquery-latest.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script><!--IE10 이하 브라우저-->
+    <!--[if IE]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
+    <div id="_skip_menu">
+        <a href="#_container">본문 바로가기</a>
+    </div>
     <div id="wrap">
         <header id="_header" class="_work">
             <nav id="_nav" class="_clearfix">
                 <div class="_nav_title_box">
                     <a href="../portfolio/sos.html" class="_nav_btn _prev_btn">Sosfestival</a>
                     <p class="_nav_tit">#_Portfolio</p>
+                    <a href="../portfolio/tonymoly.html" class="_nav_btn _next_btn">TONYMOLY</a>
                 </div>
             </nav>
         </header>
@@ -32,7 +39,7 @@
                 <div class="_spot">
                     <h2 class="_spot_tit"><strong>Grib-IoT</strong></h2>
                     <p class="_spot_txt">by_LEE JIN SU</p>
-                    <a href="../girb/index.html" target="_blank" class="_btn _btn_link">제작 사이트로 가기</a>
+                    <a href="../grib/index.html" target="_blank" class="_btn _btn_link">제작 사이트로 가기</a>
                     <a href="../index.html" class="_btn _btn_link">홈으로 가기</a>
                 </div>
             </article>

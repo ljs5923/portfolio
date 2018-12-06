@@ -13,10 +13,16 @@
     <link rel="stylesheet" href="../font/nanumsquare.css">
     <link rel="stylesheet" href="../css/animate.min.css">
     <script src="../js/jquery-latest.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script><!--IE10 이하 브라우저-->
+    <!--[if IE]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
+    <div id="_skip_menu">
+        <a href="#_container">본문 바로가기</a>
+    </div>
     <div id="wrap">
         <header id="_header" class="_work">
             <nav id="_nav" class="_clearfix">
@@ -150,14 +156,10 @@
                             <a href="https://github.com/ljs5923" target="_blank" class="_icon _git_icon"></a>
                         </li>
                         <li class="_contact_icon_lst _w3c">
-                            <p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px"
-			src="//jigsaw.w3.org/css-validator/images/vcss"
-			alt="올바른 CSS입니다!" /></a></p>
+                            <p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="//jigsaw.w3.org/css-validator/images/vcss" alt="올바른 CSS입니다!" /></a></p>
                         </li>
                         <li class="_contact_icon_lst _w3c">
-                            <p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px"
-			src="//jigsaw.w3.org/css-validator/images/vcss-blue"
-			alt="올바른 CSS입니다!" /></a></p>
+                            <p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="//jigsaw.w3.org/css-validator/images/vcss-blue" alt="올바른 CSS입니다!" /></a></p>
                         </li>
                     </ul>
                 </div>
