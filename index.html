@@ -322,7 +322,7 @@
             var $footerNav = $footer.find('._footer_nav');
             var $footerNavBtn = $footerNav.find('._footer_nav_lst');
 
-            function menuMoveEvent(menuIndex) {
+            var menuMoveEvent = function (menuIndex) {
                 $('html, body').stop().animate({
                     scrollTop: menuIndex
                 }, 1000);
@@ -342,13 +342,13 @@
                     scrollPlus += $('article').eq(i).outerHeight(true);
                 }
                 if (index < 5) {
-                    $mobileMenu.find('._gnb_wrap').slideUp(function() {
-                        $mobileMenu.find('._mobile_btn').fadeIn();
+                    $mobileMenu.find('._gnb_wrap').stop().slideUp(function() {
+                        $mobileMenu.find('._mobile_btn').stop().fadeIn();
                     });
                     menuMoveEvent(scrollPlus);
                 } else if (index = 5) {
-                    $mobileMenu.find('._gnb_wrap').slideUp(function() {
-                        $header.find('._mobile_btn').fadeIn()
+                    $mobileMenu.find('._gnb_wrap').stop().slideUp(function() {
+                        $header.find('._mobile_btn').stop().fadeIn()
                     });
                 }
             })
@@ -360,24 +360,24 @@
                 }
                 menuMoveEvent(scrollPlus);
             })
-            $btn.off().on('click', function() {
+            $btn.on('click', function() {
                 if ($(this).hasClass('_show_btn')) {
-                    $(this).fadeOut(function() {
-                        $header.find('._hidden_btn').fadeIn();
+                    $(this).stop().fadeOut(function() {
+                        $header.find('._hidden_btn').stop().fadeIn();
                     });
                     $header.stop().animate({
                         right: 0
                     }, 500)
                 } else if ($(this).hasClass('_hidden_btn')) {
-                    $(this).fadeOut(function() {
-                        $header.find('._show_btn').fadeIn();
+                    $(this).stop().fadeOut(function() {
+                        $header.find('._show_btn').stop().fadeIn();
                     });
                     $header.stop().animate({
                         right: -180
                     }, 500)
                 } else if ($(this).hasClass('_mobile_btn')) {
-                    $(this).fadeOut(function() {
-                        $mobileMenu.find('._gnb_wrap').slideDown();
+                    $(this).stop().fadeOut(function() {
+                        $mobileMenu.find('._gnb_wrap').stop().slideDown();
                     })
                 }
             })
@@ -389,12 +389,12 @@
             var $conTentLst = $conWrap02.find('._content_lsts');
             $introBtn.on('click', function() {
                 if ($(this).hasClass('_btn_intro')) {
-                    $introConIntro.fadeOut(function() {
-                        $conWrap02.fadeIn();
+                    $introConIntro.stop().fadeOut(function() {
+                        $conWrap02.stop().fadeIn();
                     });
                 } else if ($(this).hasClass('_btn_tit')) {
-                    $conWrap02.fadeOut(function() {
-                        $introConIntro.fadeIn();
+                    $conWrap02.stop().fadeOut(function() {
+                        $introConIntro.stop().fadeIn();
                     });
                 }
             });

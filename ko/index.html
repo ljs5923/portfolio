@@ -19,6 +19,9 @@
 </head>
 
 <body>
+    <div id="_skip_menu">
+        <a href="#_company_content">본문 바로가기</a>
+    </div>
     <div id="wrap">
         <header id="_header" class="_main_header">
             <div id="_nav_container">
@@ -235,7 +238,9 @@
                     </div>
                     <div class="_content1_control_box">
                         <div class="_content1_btn_area">
-                            <button class="_content1_btn _content1_prev"><spna class="_prev_btn _btn_img">사업소개 이전 페이지</spna></button>
+                            <button class="_content1_btn _content1_prev">
+                                <spna class="_prev_btn _btn_img">사업소개 이전 페이지</spna>
+                            </button>
                             <button class="_content1_btn _content1_next"><span class="_next_btn _btn_img">사업소개 다음 페이지</span></button>
                         </div>
                         <div class="_contnet1_count_area">
@@ -776,7 +781,7 @@
                 //scrolltop event start
                 $('._btn_scroll_step').on('click', function() {
                     var scrvalue = $('._content1_container').offset().top;
-                    $('html,body').animate({
+                    $('html,body').stop().animate({
                         'scrollTop': scrvalue
                     }, 'swing')
                 })
@@ -786,16 +791,7 @@
                 var nextTextNo = 3;
                 var prevpx = 0;
                 var nextpx = 0;
-                $('._content1_prev').on('click', function() {
-                    prevContentText();
-                    prevContentImgSlide();
-                });
-                $('._content1_next').on('click', function() {
-                    nextContentText();
-                    nextContentImgSlide();
-                });
-
-                function prevContentText() {
+                var prevContentText = function () {
                     if (prevTextNo == 3) {
                         $('._text' + (prevTextNo - 2)).fadeOut(1000);
                         $('._text' + (prevTextNo)).fadeIn(1000);
@@ -816,8 +812,7 @@
                         nextTextNo = 3;
                     }
                 }
-
-                function prevContentImgSlide() {
+                var prevContentImgSlide = function () {
                     if (prevpx == 1) {
                         $('._slideimg4').stop().animate({
                             left: 2090
@@ -946,8 +941,7 @@
                         nextpx = 5;
                     }
                 }
-
-                function nextContentText() {
+                var nextContentText = function () {
                     if (nextTextNo == 3) {
                         $('._text' + (nextTextNo - 2)).fadeOut(1000);
                         $('._text' + (nextTextNo - 1)).fadeIn(1000);
@@ -968,8 +962,7 @@
                         prevTextNo = 3;
                     }
                 }
-
-                function nextContentImgSlide() {
+                var nextContentImgSlide = function () {
                     if (nextpx == 1) {
                         $('._slideimg4').stop().animate({
                             left: -1580
@@ -1098,6 +1091,14 @@
                         prevpx = 5;
                     }
                 }
+                $('._content1_prev').on('click', function() {
+                    prevContentText();
+                    prevContentImgSlide();
+                });
+                $('._content1_next').on('click', function() {
+                    nextContentText();
+                    nextContentImgSlide();
+                });
                 //content2 slide img End
                 //content3 slide img start
                 $('._content3_slide_wrap').bxSlider({

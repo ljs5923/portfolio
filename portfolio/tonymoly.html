@@ -192,7 +192,7 @@
                 onSlideBefore: function($slideElement, oldIndex, newIndex) {
                     decH = $dec.eq(newIndex).outerHeight();
                     $decBox.css('height', decH);
-                    $dec.eq(newIndex).fadeIn().siblings().fadeOut();
+                    $dec.eq(newIndex).stop().fadeIn().siblings().stop().fadeOut();
                 }
             })
         })

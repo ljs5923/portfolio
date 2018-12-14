@@ -2,16 +2,16 @@
 /* 테스크탑 (가로 해상도가 1200px 보다 작은 화면에 적용) */
 @media only screen and (max-width:1199px){
 /* main */
-    #_header ._spot_wrap{height: 600px}
-    #_header ._nav ._gnb_lst ._txt{font-size: 16px;letter-spacing: 0}
-    #_header ._spot_wrap ._main_logo{width: 390px}
-    ._content_container{width: 80% !important}
-    ._content_container ._content_top ._img_box{position: relative;width:50%;margin: 0 auto;padding: 0}
-    ._content_container ._content_top ._dec_box{margin: 0 auto;padding-left: 0;text-align: center}
-    ._content_container._seoul1 ._content_top ._img_box{position: absolute;padding-left: 10%}
-    ._content_container._seoul1 ._content_top ._dec_box{width: 40%;padding-left: 60%;text-align: left}
-    ._content_container._bot ._content_top ._img_box{width: 80%}
-    #_footer{height: auto}
+    #_header ._spot_wrap{height:600px}
+    #_header ._nav ._gnb_lst ._txt{font-size:16px;letter-spacing:0}
+    #_header ._spot_wrap ._main_logo{width:390px}
+    ._content_container{width:80% !important}
+    ._content_container ._content_top ._img_box{position:relative;width:50%;margin:0 auto;padding:0}
+    ._content_container ._content_top ._dec_box{margin:0 auto;padding-left:0;text-align:center}
+    ._content_container._seoul1 ._content_top ._img_box{position:absolute;padding-left:10%}
+    ._content_container._seoul1 ._content_top ._dec_box{width:40%;padding-left:60%;text-align:left}
+    ._content_container._bot ._content_top ._img_box{width:80%}
+    #_footer{height:auto}
     #_footer ._foot_wrap ._lst ._txt{font-size:18px}
     #_footer ._foot_wrap ._foot_bot ._name_tel_txt{font-size:22px}
     #_footer ._foot_wrap ._foot_mid ._lst2,#_footer ._foot_wrap ._foot_mid ._lst3,#_footer ._foot_wrap ._foot_mid ._lst4{width:30%}
@@ -19,15 +19,15 @@
     #_footer ._foot_wrap ._foot_mid ._lst a:after{content:'';position:absolute;top:35%;right:0;width:2px;height:30%;background-color:#fff}
     #_footer ._foot_wrap ._foot_mid ._lst4 a:after{content:'';opacity:0}
     #_footer ._foot_wrap ._foot_mid ._lst6 a:after{content:'';opacity:0}
-    #_footer ._foot_wrap ._foot_bot ._sns_btn{bottom: 20px}
+    #_footer ._foot_wrap ._foot_bot ._sns_btn{bottom:20px}
 /* eng */
     ._content_container._eng ._content ._img_box{padding-left:10%}
 }
 /* 가로 모드 태블릿 디바이스 (세로 해상도가 768px 보다 작은 화면에 적용) */
 @media only screen and (max-height:768px){
     #_header ._nav ._gnb_lst ._txt{font-size:15px}
-    ._content_container._seoul2 ._content_top ._img_box{position:absolute;top:0;left:-50px;width:30%;padding: 0 10%;opacity:0}
-    ._content_container._seoul2 ._content_top ._dec_box{width:50%;padding-left:50%;text-align: left}
+    ._content_container._seoul2 ._content_top ._img_box{position:absolute;top:0;left:-50px;width:30%;padding:0 10%;opacity:0}
+    ._content_container._seoul2 ._content_top ._dec_box{width:50%;padding-left:50%;text-align:left}
 }
 /* 태블릿 디바이스 (가로 해상도가 992px 보다 작은 화면에 적용) */
 @media only screen and (max-width:991px){
@@ -36,14 +36,14 @@
     ._menu_btn_wrap{display:block}
     #_header ._nav ._gnb_lst ._txt{font-size:15px}
     #_anchor_wrap{display:none}
-    ._content_container ._content_top ._img_box{width: 50%}
-    ._content_container ._content_top ._dec_box{width: 70%}
+    ._content_container ._content_top ._img_box{width:50%}
+    ._content_container ._content_top ._dec_box{width:70%}
     ._content_container ._content_bott{display:none}
-    ._content_container._seoul1 ._content_top{padding-bottom: 0}
-    ._content_container._seoul1 ._content_top ._img_box{position:relative;padding-left: 0}
+    ._content_container._seoul1 ._content_top{padding-bottom:0}
+    ._content_container._seoul1 ._content_top ._img_box{position:relative;padding-left:0}
     ._content_container._seoul1 ._content_top ._dec_box{padding-left:0;text-align:center}
-    ._content_container._bot ._tit_img{width: 60%}
-    #_footer ._foot_wrap{padding: 50px 0}
+    ._content_container._bot ._tit_img{width:60%}
+    #_footer ._foot_wrap{padding:50px 0}
     #_footer ._foot_wrap ._foot_mid ._lst1{width:13%}
     #_footer ._foot_wrap ._foot_mid ._lst4{padding-left:12%}
     #_footer ._foot_wrap ._foot_mid ._lst4, #_footer ._foot_wrap ._foot_mid ._lst5,#_footer ._foot_wrap ._foot_mid ._lst6{width:29.3%}
@@ -60,25 +60,25 @@
 /* 가로모드 모바일 디바이스 (가로 해상도가 768px 보다 작은 화면에 적용) */
 @media only screen and (max-width:767px){
 /* main */
-    #_header ._spot_wrap{height: 300px}    
-    #_header ._spot_wrap ._main_logo{width: 290px}
-    ._content_container{width: 100% !important}
-    ._content_container ._content_wrap{margin-top: 20px}
+    #_header ._spot_wrap{height:300px}    
+    #_header ._spot_wrap ._main_logo{width:290px}
+    ._content_container{width:100% !important}
+    ._content_container ._content_wrap{margin-top:20px}
     ._content_container ._sub_logo{width:245px;padding:10px 0;margin-top:20px}
     ._content_container ._sub_logo ._tit{font-size:18px}
     ._content_container ._sub_logo ._sub_txt{padding-top:5px;font-size:12px}
-    ._content_container ._content_top ._dec_box{width: 60%}
+    ._content_container ._content_top ._dec_box{width:60%}
     ._content_container ._content_top ._dec_box ._txt{padding-top:5px;font-size:12px}
     ._content_container ._content_top ._dec_box ._foc_txt{font-size:16px}
     ._content_container ._content_top ._dec_box ._date_txt{font-size:12px}
     ._content_container ._content_top ._dec_box ._locatxt{font-size:12px}
-    ._content_container ._content_top ._dec_box ._link{font-size: 14px;}
-    ._content_container._seoul2 ._content_wrap{margin-top: 20px}
-    ._content_container._seoul2 ._content_top._content_top_2ed{margin-top: 20px}
-    ._content_container._seoul2 ._content_top ._img_box{position: relative;width: 50%;padding: 0}
-    ._content_container._seoul2 ._content_top ._dec_box{padding-left: 0;text-align: center}
-    ._content_container._bot ._tit_img{width: 50%;margin-top: 20px}
-    ._content_container._bot ._content_top ._img_box{width: 60%;margin-bottom: 20px}
+    ._content_container ._content_top ._dec_box ._link{font-size:14px}
+    ._content_container._seoul2 ._content_wrap{margin-top:20px}
+    ._content_container._seoul2 ._content_top._content_top_2ed{margin-top:20px}
+    ._content_container._seoul2 ._content_top ._img_box{position:relative;width:50%;padding:0}
+    ._content_container._seoul2 ._content_top ._dec_box{padding-left:0;text-align:center}
+    ._content_container._bot ._tit_img{width:50%;margin-top:20px}
+    ._content_container._bot ._content_top ._img_box{width:60%;margin-bottom:20px}
     #_footer ._foot_wrap{padding:40px 0}
     #_footer ._foot_wrap ._lst{height:40px}
     #_footer ._foot_wrap ._lst ._txt{line-height:40px;font-size:12px}
@@ -142,11 +142,11 @@
     ._content_container ._sub_logo{width:195px;margin-top:0}
     ._content_container ._sub_logo ._tit{font-size:16px}
     ._content_container ._sub_logo ._sub_txt{font-size:10px}
-    ._content_container._seoul2 ._content_wrap{margin-top: 0}
-    ._content_container._seoul2 ._content_top ._dec_box{width: 60%}
-    ._content_container._seoul2 ._content_top ._dec_box ._txt:first-of-type{display: block}
-    ._content_container._seoul2 ._content_top ._dec_box ._txt{display: none}
-    ._content_container._seoul2 ._content_top ._dec_box ._locatxt{display: none}
+    ._content_container._seoul2 ._content_wrap{margin-top:0}
+    ._content_container._seoul2 ._content_top ._dec_box{width:60%}
+    ._content_container._seoul2 ._content_top ._dec_box ._txt:first-of-type{display:block}
+    ._content_container._seoul2 ._content_top ._dec_box ._txt{display:none}
+    ._content_container._seoul2 ._content_top ._dec_box ._locatxt{display:none}
     ._content_container._bot ._tit_img{width:70%;margin:0 auto;padding:0}
     ._content_container._bot ._content_top ._img_box{width:80%}
 /* cul */

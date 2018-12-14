@@ -320,22 +320,6 @@
             </div>
         </footer>
     </div>
-    <script>
-        jQuery(function($) {
-            var moreIndex = 1
-            var lstIndex = Math.ceil($('._item').length / 8);
-            $('._btn_more').on('click', function() {
-                console.log(lstIndex);
-                for (i = 0; i < 8; i++) {
-                    $('._item').eq(i + (moreIndex * 8)).fadeIn();
-                }
-                ++moreIndex;
-                if (lstIndex == moreIndex) {
-                    $('._content_more_box').hide();
-                }
-            })
-        })
-    </script>
 </body>
 
 </html>

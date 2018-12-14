@@ -16,17 +16,14 @@
     <script src="js/common.js"></script>
     <script src="js/fullpage/fullpage.min.js"></script>
     <script src="js/object-fit-videos.min.js"></script>
-    <!--IE10 이하 브라우저-->
-    <!--[if IE]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
-    <div id="_skip_menu_wrap">
-        <a href="#_container">본문 바로가기</a>
-    </div>
     <div id="_wrap">
+        <div id="_skip_menu_wrap">
+            <a href="#_container">본문 바로가기</a>
+            <a href="#_gnb">메뉴 바로가기</a>
+        </div>
         <header id="_header" class="_main">
             <h1 class="_logo">
                 <a href="index.html">
@@ -242,6 +239,10 @@
             });
             //fullpage end
             //1st page video count number function start
+            var countNum = function () {
+                var slideIndex = $('.slide.active').index();
+                $('._current_num').text("0" + (slideIndex + 1));
+            }
             $("._my_video").on("ended", function() {
                 $('.fp-next').trigger('click');
                 countNum();
@@ -250,12 +251,7 @@
                 setTimeout(function() {
                     countNum();
                 }, 200);
-            });
-
-            function countNum() {
-                var slideIndex = $('.slide.active').index();
-                $('._current_num').text("0" + (slideIndex + 1));
-            }
+            });            
             //1st page video count number function end
             //scroll down btn event start
             $('#_scroll_down_wrap').on('click', function(e) {
